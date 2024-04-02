@@ -1,4 +1,4 @@
-import introVideo from './intro.mp4';
+import introVideo from './intro2.mp4';
 import eyeIconSvg from './eye-arrow-left.svg';
 
 
@@ -44,7 +44,6 @@ return navContainer;
 
 }
 
-
 function yogaPoseImage() {
     const descriptionContainer = document.createElement('div');
     const imgContainer = document.createElement('div');
@@ -61,13 +60,12 @@ videoElement.src = introVideo;
 videoElement.autoplay = true;
 videoElement.loop = true;
 videoElement.muted = true;
+// videoElement.alt = 'scenic video of a women with moving landscape between forest and ocean sunset'
 
-
-imgContainer.style.backgroundImage = 'url()'
+imgContainer.style.backgroundImage = 'url(introVideo)'
 
     descriptionContainer.appendChild(imgContainer)
 imgContainer.appendChild(videoElement)
-
 
     return descriptionContainer;
 }
@@ -83,10 +81,10 @@ const p = document.createElement('p');
 p.id = 'paragraph-description';
 // h1.innerHTML = '';
 
-// p.innerHTML = "Hi, I'm Paula. I come from Ireland, and my family has a strong connection to various energy modalities, herbalism, and sustainable farming methods. I've been immersed in the world of subtle energies for many years. For the past two decades, I've split my time between my homeland and Thailand, living, studying, practicing, and embracing a holistic lifestyle."
-// Throughout my journey, my main focus has been on connecting with my true self and serving others, driven by my profound love for the human body, health, and well-being. This passion led me to pursue a career in nursing. However, as time went on, I grew disillusioned with the Western medical approach. Two significant experiences with patients reinforced a pattern I observed repeatedly—the emphasis on treating symptoms rather than addressing the underlying cause of disease.
-p.textContent = "Meet Paula, a passionate individual hailing from Ireland. Her family has deep roots in various energy modalities, herbalism, and sustainable farming methods. Paula has spent years immersing herself in the realm of subtle energies, nurturing her understanding and connection with this fascinating field. With a dual home in Ireland and Thailand, she has spent two decades studying, practicing, and embracing a holistic lifestyle.";
+// Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches 
+// Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.
 
+p.textContent = "Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches";
 
 div.appendChild(h1)
 div.appendChild(p)
@@ -95,13 +93,14 @@ return div;
 }
 
 const flipChartTitles = [
-    'yoga teacher',
- 'registered nurse',
-  'yoga anatomy teacher',
-   'certified reiki master',
-    'subtle body eneergy anatomy',
-     'systematic family constellations ',
-     'intuitive energy therapy '
+    'glowing skin',
+    'empowerment',
+ 'female community',
+  'inner wellbeing',
+   'hollistic self care',
+    'embracing the journey',
+'beauty',
+
     ];
     let currentIndex = 0;
 function flipChartTitle() {
@@ -149,7 +148,7 @@ h1.appendChild(span)
 
 const p = document.createElement('p')
 p.id = 'section-2-paragraph';
-p.textContent = "At the core of her personal journey lies a profound commitment to self-discovery and a genuine desire to make a positive impact on others' lives. This unwavering love for the human body, health, and well-being led her to pursue a career in nursing. However, Paula gradually grew disenchanted with the limitations of Western medicine. Two pivotal encounters with patients reaffirmed a recurring pattern—the focus on treating symptoms rather than delving into the root causes of disease.";
+p.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
 
 textsContainer.appendChild(h1)
  textsContainer.appendChild(p)

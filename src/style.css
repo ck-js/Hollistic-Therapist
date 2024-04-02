@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(135deg, #DAB3FF, #FFB3B3);
+    /* background: linear-gradient(135deg, #b3b4ff43, #FFB3B3); */
+    background-color: rgb(179,148,105);
     color: black;
     text-align: center;
     font-size: 1rem;
@@ -83,6 +84,7 @@ margin-bottom: 10%;
     color: white;
     text-transform: lowercase;
 /* font-family: 'Courier New', Courier, monospace; */
+text-align: center;
 opacity: 0.7;
 padding: auto;
 margin-bottom: 20%;
