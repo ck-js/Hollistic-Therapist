@@ -1,5 +1,6 @@
 import introVideo from './intro2.mp4';
 import section2Image from './section2image2.jpg'
+import section3Image from './section3image.jpg'
 import eyeIconSvg from './eye-arrow-left.svg';
 
 
@@ -125,7 +126,7 @@ const imageWrapper = document.createElement('div');
 imageWrapper.id = 'section-2-image-wrapper';
 const image = new Image();
 image.src = section2Image;
-
+image.alt = 'majestic asian woman with eyes closed holding her chest';
 imageWrapper.appendChild(image)
 imageContainer.appendChild(imageWrapper)
 
@@ -155,21 +156,27 @@ function section3Component() {
     const parentContainer = document.createElement('div')
     parentContainer.classList.add('bio')
     parentContainer.id = 'section-3-parent-container';
-    
+
+const image = new Image();
+image.src = section3Image;
+
+parentContainer.appendChild(image)
+
+    parentContainer.style.backgroundImage = 'url(image)'
+
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-3-text-container';
     
     const h1 = document.createElement('h1');
     h1.id = 'section-3-title';
-    h1.textContent = "Paulas journey from the beginning ";
+    h1.textContent = "about Preechaya";
     
-wrapWordInSpan('Paulas',h1)
-
+wrapWordInSpan('Preechaya',h1)
 
 
     const p = document.createElement('p')
     p.id = 'section-3-paragraph';
-    p.textContent = "of her nursing career led her down the path of Yoga and Energy Medicine, which served as a powerful homecoming to what she had always intuitively known. She firmly believed that every individual possesses the inherent power and capacity to maintain balance in all aspects of life—mentally, physically, emotionally, and spiritually.";
+    p.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
     
     textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
