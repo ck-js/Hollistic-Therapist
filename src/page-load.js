@@ -1,4 +1,5 @@
 import introVideo from './intro2.mp4';
+import section2Image from './section2image2.jpg'
 import eyeIconSvg from './eye-arrow-left.svg';
 
 
@@ -117,35 +118,24 @@ const parentContainer = document.createElement('div')
 parentContainer.classList.add('bio')
 parentContainer.id = 'section-2-parent-container';
 
+const imageContainer = document.createElement('div');
+imageContainer.id = 'section-2-image-container';
+
+const imageWrapper = document.createElement('div');
+imageWrapper.id = 'section-2-image-wrapper';
+const image = new Image();
+image.src = section2Image;
+
+imageWrapper.appendChild(image)
+imageContainer.appendChild(imageWrapper)
+
 const textsContainer = document.createElement('div');
 textsContainer.id = 'section-2-text-container';
 
 const h1 = document.createElement('h1');
 h1.id = 'section-2-title';
-// h1.textContent = 'why Paula does what she does...'
-// const words = h1.textContent.split(' ');
-const words = 'why Paula does what she does';
-const splittedWords = words.split(' ')
-
-for (let i =0; i < splittedWords.length; i++) {
-const word = splittedWords[i];
-const span = document.createElement('span');
-span.textContent = word;
-if (word === 'Paula') {
-    span.id = 'paula-span'
-    
-}
-h1.appendChild(span)
-
-      if (i < word.length - 1) {
-        const space = document.createTextNode(' ');
-        h1.appendChild(space);
-      }
-    
+h1.textContent = 'glow on flows mission'
   
-}
-
-
 const p = document.createElement('p')
 p.id = 'section-2-paragraph';
 p.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
@@ -153,9 +143,11 @@ p.textContent = "Our mission is to change how women think about aging by embraci
 textsContainer.appendChild(h1)
  textsContainer.appendChild(p)
 
+ parentContainer.appendChild(imageContainer)
 parentContainer.appendChild(textsContainer)
 
 return parentContainer
+
 }
 
 // section 3 components 
