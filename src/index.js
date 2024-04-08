@@ -24,15 +24,18 @@ section1Container.appendChild(section1Description())
 
 setInterval(flipChartTitle, 2000);
 
+contentOutput.appendChild(section4Component())
+
+
 contentOutput.appendChild(section2Component())
 
 contentOutput.appendChild(section3Component())
 
-contentOutput.appendChild(section4Component())
 
-contentOutput.appendChild(section5Component())
 
-contentOutput.appendChild(section6Component())
+// contentOutput.appendChild(section5Component())
+
+// contentOutput.appendChild(section6Component())
 
 contentOutput.appendChild(section7Component())
 

@@ -1,15 +1,20 @@
+import logoWhite from './logo.png'
 import introVideo from './intro2.mp4';
 import section2Image from './section2image2.jpg'
 import section3Image from './section3image.jpg'
 import eyeIconSvg from './eye-arrow-left.svg';
+import './chamsbold.ttf';
+import './Lora-SemiBold.ttf';
 
 
 function instructorName() {
     const div = document.createElement('div');
-    const h1 = document.createElement('h1');
-h1.innerHTML = 'glow on flow';
+    const image = new Image();
+image.src = logoWhite;
+image.alt = 'glow on flow logo... go home '
 
-div.appendChild(h1)
+
+div.appendChild(image)
 
     return div;
 }
@@ -77,6 +82,7 @@ function section1Description() {
     div.id = 'text-container';
 const h1 = document.createElement('h1');
 h1.id = 'section-1-title';
+h1.classList.add('titles')
     
 const p = document.createElement('p');
 // p.id = 'section-1-paragraph';
@@ -133,16 +139,30 @@ imageContainer.appendChild(imageWrapper)
 const textsContainer = document.createElement('div');
 textsContainer.id = 'section-2-text-container';
 
+const p1 = document.createElement('p')
+p1.id = 'section-2-paragraph-1';
+p1.textContent = "- rejuvenate your mind and soul -";
+
 const h1 = document.createElement('h1');
 h1.id = 'section-2-title';
+h1.classList.add('titles')
 h1.textContent = 'glow on flows mission'
   
-const p = document.createElement('p')
-p.id = 'section-2-paragraph';
-p.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
+const p2 = document.createElement('p')
+p2.id = 'section-2-paragraph';
+p2.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
 
+const button = document.createElement('button')
+const anchor = document.createElement('a');
+button.appendChild(anchor)
+anchor.textContent = 'Learn More';
+
+
+
+textsContainer.appendChild(p1)
 textsContainer.appendChild(h1)
- textsContainer.appendChild(p)
+ textsContainer.appendChild(p2)
+ textsContainer.appendChild(button)
 
  parentContainer.appendChild(imageContainer)
 parentContainer.appendChild(textsContainer)
@@ -169,6 +189,7 @@ parentContainer.appendChild(image)
     
     const h1 = document.createElement('h1');
     h1.id = 'section-3-title';
+    h1.classList.add('titles')
     h1.textContent = "about Preechaya";
     
 wrapWordInSpan('Preechaya',h1)
@@ -195,16 +216,24 @@ function section4Component() {
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-4-text-container';
     
+const p = document.createElement('p')
+    p.id = 'section-4-paragraph';
+    p.textContent = "- embrace your unique journey -";
+
     const h1 = document.createElement('h1');
     h1.id = 'section-4-title';
-    h1.textContent = "east meets west";
+    h1.classList.add('titles')
+    h1.textContent = "experience the power of hollistic self-care rituals for radiant skin and wellbeing";
     
-    const p = document.createElement('p')
-    p.id = 'section-4-paragraph';
-    p.textContent = "Unlike Western Medicine which looks primarily at the physical body, Eastern practices look at the self holistically. Problems arise when our mind and body become misaligned chronically and continuously. Our life force becomes stuck and illness may follow ,physically ,mentally or emotionally.";
+const button = document.createElement('a')
+button.textContent = 'Discover'
+button.href = '#section-2-parent-container'
+button.ariaLabel = 'click to discover'
     
-    textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
+    textsContainer.appendChild(h1)
+    textsContainer.appendChild(button)
+    
     
     parentContainer.appendChild(textsContainer)
     
@@ -222,15 +251,14 @@ function section5Component() {
     
     const h1 = document.createElement('h1');
     h1.id = 'section-5-title';
+    h1.classList.add('titles')
     h1.textContent = "...getting to the root cause";
     
     wrapWordInSpan('root', h1)
 
-
-
     const p = document.createElement('p')
     p.id = 'section-5-paragraph';
-    p.textContent = "When we fail to look at the effects of imbalance on all levels of the body, we fail to treat the root cause of dis-ease. Contrary to popular perception, we are all born with an innate ability to feel and understand our own energies.  Energy isn’t something you do, it’s something you already are. Much like a physical practice, you can become more attuned to your energy or life force through easy everyday practice -- feeling your way into balance, health and peace.";
+    p.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
     
     textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
@@ -256,7 +284,7 @@ function section6Component() {
 
     const p = document.createElement('p')
     p.id = 'section-6-paragraph';
-    p.textContent = "Paula's life mission revolves around living out her passion for walking a path that connects her with her true nature and being of service to others. She is dedicated to sharing what she learns and finds most beneficial along the way. Through accessible teachings and healing modalities.";
+    p.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
     
     textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
@@ -277,17 +305,31 @@ function section7Component() {
     
     const h1 = document.createElement('h1');
     h1.id = 'section-7-title';
-    h1.textContent = "...what Paula can do for you. ";
-    wrapWordInSpan('Paula', h1)
+    h1.textContent = "Education & Certifications";
+    // wrapWordInSpan('Paula', h1)
 
-
-
-    const p = document.createElement('p')
-    p.id = 'section-7-paragraph';
-    p.textContent = "Paula offers group workshops and one-on-one private sessions to guide individuals back into their mind and body. Her core offerings are rooted in Subtle Body Anatomy (energy body anatomy) and Physical Anatomy, combined with practices such as Yoga, Intuitive Anatomy, African Reflexology, Family & Systemic Constellation, Kinesiology, and Flower Essence Therapy.";
+    // const p = document.createElement('p')
+    // p.id = 'section-7-paragraph';
+    // p.textContent = "Paula offers group workshops and one-on-one private sessions to guide individuals back into their mind and body. Her core offerings are rooted in Subtle Body Anatomy (energy body anatomy) and Physical Anatomy, combined with practices such as Yoga, Intuitive Anatomy, African Reflexology, Family & Systemic Constellation, Kinesiology, and Flower Essence Therapy.";
     
+const ul = document.createElement('ul')
+const li1 = document.createElement('li');
+li1.textContent = 'Certified Facialist by Health & Beauty Development School of Thailand'
+const li2 = document.createElement('li');
+li2.textContent = 'Certified Integrative Vibrational Therapist by Yoga Sound Therapy'
+const li3 = document.createElement('li');
+li3.textContent = 'Certified Face Yoga Teacher by The Danielle Collins Face Yoga Method'
+const li4 = document.createElement('li');
+li4.textContent = 'Certified Sculptural Face Lifting™ Professional by Yakov Gershkovich'
+
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
+
+
     textsContainer.appendChild(h1)
-     textsContainer.appendChild(p)
+     textsContainer.appendChild(ul)
     
     parentContainer.appendChild(textsContainer)
     
@@ -318,10 +360,10 @@ eyeIcon.id = 'eye-icon'
 cardItem1.style.backgroundImage = 'url(eyeIcon)'
 
 const cardTitle = document.createElement('h5')
-cardTitle.textContent = 'yoga teacher';
+cardTitle.textContent = 'In-Person Facial Treatments:';
 
 const cardDescription = document.createElement('p');
-cardDescription.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+cardDescription.textContent = 'Get visibly rejuvenated and relaxed with my signature facial treatments, which focus on hand massage techniques. My services include Sculptural Face Lifting, gua sha, and facial cupping. You can visit me at my Chaya Wellness Koh Phangan studio or as a guest therapist at various locations. Join my inner circle list for updates on availability.'
 
 cardItem1.appendChild(eyeIcon)
 cardItem1.appendChild(cardTitle)
@@ -335,15 +377,14 @@ eyeIcon2.id = 'eye-icon'
 cardItem2.style.backgroundImage = 'url(eyeIcon2)'
 
 const cardTitle2 = document.createElement('h5')
-cardTitle2.textContent = 'yoga teacher';
+cardTitle2.textContent = 'Face Yoga Workshops:';
 
 const cardDescription2 = document.createElement('p');
-cardDescription2.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+cardDescription2.textContent = 'Join me for transformative Face Yoga workshops, offered both online and in-person in group settings or private sessions, which include personalized consultations and tailored face yoga guides to address your unique facial needs.'
 
 cardItem2.appendChild(eyeIcon2)
 cardItem2.appendChild(cardTitle2)
 cardItem2.appendChild(cardDescription2)
-
 
 
 const eyeIcon3 = new Image();
@@ -353,10 +394,10 @@ eyeIcon3.id = 'eye-icon'
 cardItem3.style.backgroundImage = 'url(eyeIcon3)'
 
 const cardTitle3 = document.createElement('h5')
-cardTitle3.textContent = 'yoga teacher';
+cardTitle3.textContent = 'Self-Care Resources:';
 
 const cardDescription3 = document.createElement('p');
-cardDescription3.textContent = 'Teaching yoga to all levels in workshops and in private sessions'
+
 
 cardItem3.appendChild(eyeIcon3)
 cardItem3.appendChild(cardTitle3)
@@ -364,13 +405,11 @@ cardItem3.appendChild(cardDescription3)
 
 
 
-
-
     parentContainer.appendChild(cardsContainer)
     cardsContainer.appendChild(cardItem1)
     cardsContainer.appendChild(cardItem2)
     cardsContainer.appendChild(cardItem3)
-    cardsContainer.appendChild(cardItem4)
+    
 
     return parentContainer
     }
@@ -417,7 +456,7 @@ const hr = document.createElement('hr')
             var span = document.createElement('span');
             span.textContent = words[i];
             span.id = 'span-' + i
-            span.style.color = '#7315cb';
+            // span.style.color = '#7315cb';
             span.style.fontWeight = 'bold';
       
             words[i] = span.outerHTML;

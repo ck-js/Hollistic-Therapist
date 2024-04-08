@@ -1,13 +1,40 @@
+:root {
+--primary-background-color: rgb(220, 198, 165);
+--title-font-family: london;
+--paragraph-font-family: chamsbold;
+margin-top: 300px;
+}
+
+@font-face {
+    font-family: 'chamsbold';
+    src: url('./chamsbold.ttf') format('truetype'),
+         url('./chamsbold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'london';
+    src: url('./Lora-SemiBold.ttf') format('truetype'),
+         url('./Lora-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body {
+    font-family: var(--paragraph-font-family);
+    /* font-family: var(--title-font-family); */
     /* background: linear-gradient(135deg, #b3b4ff43, #FFB3B3); */
-    background-color: rgb(220, 198, 165);
+    
+    background-color: var(--primary-background-color);
     color: black;
     text-align: center;
     font-size: 1rem;
     padding: 0;
     margin: 0;
 }
-
+.titles {
+    font-family: var(--title-font-family);
+    color: var(--primary-background-color);
+}
 #nav-container ul {
 display: flex;
 justify-content: center;
@@ -73,24 +100,19 @@ font-size: 1.2rem;
     
 }
 
-#text-container h1 {
-    color: white;
+#text-container h1 {    
     text-transform: lowercase;
-font-family: 'Courier New', Courier, monospace;
 padding: auto;
 margin-bottom: 10%;
 }
-#text-container p {
-    color: white;
+#text-container p {    
     text-transform: lowercase;
-/* font-family: 'Courier New', Courier, monospace; */
 text-align: center;
 opacity: 0.7;
 padding: auto;
 margin-bottom: 20%;
+color: white;
 }
-
-
 .bio {
     background: linear-gradient(135deg, #fbfafd, #f5deb3);
 
@@ -137,10 +159,43 @@ border-left: 15px solid #7315cb;
     transform: translate(-50%, -50%);    */
     width: 50%;
     height: auto;
-opacity: 0.8;
+display: flex;
+flex-direction: column;
     
 }
+#section-2-paragraph-1 {
+font-style: italic;
+opacity: 0.7;
 
+}
+#section-2-text-container button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: var(--primary-background-color);
+    margin-left: auto;
+    margin-right: auto;
+border: none;
+text-align: center;
+text-decoration: none;
+
+    }
+    #section-2-text-container button:hover {
+        background-color: black;
+        color: var(--primary-background-color);
+        
+        }
+#section-2-text-container a {
+
+text-decoration: none;
+color: black;
+}
+#section-2-text-container a:hover {
+
+    color: var(--primary-background-color);
+    
+    
+    
+    }
 #section-2-title {
     color: black;
 font-size: 2.2rem;
@@ -149,7 +204,7 @@ font-size: 2.2rem;
 #section-2-paragraph {
     color: black;
 font-size: 1.2rem;
-    
+opacity: 0.7;    
 }
 
 #section-3-parent-container {
@@ -173,10 +228,9 @@ font-size: 1.2rem;
     height: auto;
 
 }
-#section-3-parent-container:hover {
+/* #section-3-parent-container:hover {
     border-right: 15px solid #7315cb;
-    }
-
+    } */
 
 
 #section-3-text-container {
@@ -184,7 +238,6 @@ font-size: 1.2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
-opacity: 0.8;
     
 }
 
@@ -193,16 +246,23 @@ opacity: 0.8;
 font-size: 2.2rem;
     
 }
+#span-1 {
+    color: var(--primary-background-color);
+    background-color: rgba(0, 0, 0, 0.6);
+}
 #section-3-paragraph {
     color: white;
 font-size: 1.2rem;
-    
+background-color: rgba(0, 0, 0, 0.3);
+padding: 2px 2px;
+box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.5);
+
+
 }
 
 #section-4-parent-container {
     width: 80vw;
-    height: 600px;
-    
+    height: 600px;    
     margin-left: auto;
     margin-right: auto; 
     display: flex;
@@ -223,20 +283,27 @@ opacity: 0.8;
 background: linear-gradient(135deg, #DAB3FF, #FFB3B3);
 padding: 40px;
 border-radius: 5px;
+text-align: center;
 }
-
-
+#section-4-paragraph {
+    opacity: 0.7;
+font-size: 1.2rem;
+ font-style: italic;   
+}
 #section-4-title {
     color: black;
 font-size: 2.2rem;
     
 }
-#section-4-paragraph {
-    color: black;
-font-size: 1.2rem;
-    
-}
+#section-4-text-container a {
+border: 2px solid black;
+padding: 10px;
+cursor: pointer;
+text-decoration: none;
+color: black;
 
+
+}
 #section-5-parent-container {
     width: 80vw;
     height: 600px;
