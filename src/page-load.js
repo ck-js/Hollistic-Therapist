@@ -2,7 +2,8 @@ import logoWhite from './logo.png'
 import introVideo from './intro2.mp4';
 import section2Image from './section2image2.jpg'
 import section3Image from './section3image.jpg'
-import eyeIconSvg from './eye-arrow-left.svg';
+import section7Image from './section7image.jpg'
+import eyeIconSvg from './logo2.png';
 import './chamsbold.ttf';
 import './Lora-SemiBold.ttf';
 
@@ -202,9 +203,15 @@ const p1 = document.createElement('p')
     p.id = 'section-3-paragraph';
     p.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
     
+    const button = document.createElement('a')
+    button.textContent = 'Facebook Me'
+    button.href = '#section-2-parent-container'
+    button.ariaLabel = 'click to message me on Facebook'
+
     textsContainer.appendChild(p1)
     textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
+     textsContainer.appendChild(button)
     
     parentContainer.appendChild(textsContainer)
     
@@ -310,7 +317,7 @@ function section7Component() {
     const imageWrapper = document.createElement('div');
     imageWrapper.id = 'section-7-image-wrapper';
     const image = new Image();
-    image.src = section2Image;
+    image.src = section7Image;
     image.alt = 'majestic asian woman with eyes closed holding her chest';
     imageWrapper.appendChild(image)
     imageContainer.appendChild(imageWrapper)
@@ -416,18 +423,34 @@ const cardTitle3 = document.createElement('h5')
 cardTitle3.textContent = 'Self-Care Resources:';
 
 const cardDescription3 = document.createElement('p');
-
+cardDescription3.textContent = "Through my self-care resources, you can access a wealth of holistic beauty education. Explore self-facial massage techniques, gua sha practices, and more on my social media platforms and newsletter. Stay connected and informed by subscribing to my email list, where you'll receive exclusive tips, updates, and links to all my channels.";
 
 cardItem3.appendChild(eyeIcon3)
 cardItem3.appendChild(cardTitle3)
 cardItem3.appendChild(cardDescription3)
 
 
+const eyeIcon4 = new Image();
+eyeIcon4.src = eyeIconSvg; 
+eyeIcon4.alt = 'hello there'
+eyeIcon4.id = 'eye-icon'
+cardItem4.style.backgroundImage = 'url(eyeIcon4)'
+
+const cardTitle4 = document.createElement('h5')
+cardTitle4.textContent = 'Self-Care Resources:';
+
+const cardDescription4 = document.createElement('p');
+cardDescription4.textContent = "Through my self-care resources, you can access a wealth of holistic beauty education. Explore self-facial massage techniques, gua sha practices, and more on my social media platforms and newsletter. Stay connected and informed by subscribing to my email list, where you'll receive exclusive tips, updates, and links to all my channels.";
+
+cardItem4.appendChild(eyeIcon4)
+cardItem4.appendChild(cardTitle4)
+cardItem4.appendChild(cardDescription4)
 
     parentContainer.appendChild(cardsContainer)
     cardsContainer.appendChild(cardItem1)
     cardsContainer.appendChild(cardItem2)
     cardsContainer.appendChild(cardItem3)
+    cardsContainer.appendChild(cardItem4)
     
 
     return parentContainer
