@@ -194,11 +194,15 @@ parentContainer.appendChild(image)
     
 wrapWordInSpan('Preechaya',h1)
 
+const p1 = document.createElement('p')
+    p1.id = 'section-3-paragraph-1';
+    p1.textContent = 'live - love - laugh'
 
     const p = document.createElement('p')
     p.id = 'section-3-paragraph';
     p.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
     
+    textsContainer.appendChild(p1)
     textsContainer.appendChild(h1)
      textsContainer.appendChild(p)
     
@@ -300,6 +304,19 @@ function section7Component() {
     parentContainer.classList.add('bio')
     parentContainer.id = 'section-7-parent-container';
     
+    const imageContainer = document.createElement('div');
+    imageContainer.id = 'section-7-image-container';
+    
+    const imageWrapper = document.createElement('div');
+    imageWrapper.id = 'section-7-image-wrapper';
+    const image = new Image();
+    image.src = section2Image;
+    image.alt = 'majestic asian woman with eyes closed holding her chest';
+    imageWrapper.appendChild(image)
+    imageContainer.appendChild(imageWrapper)
+
+
+
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-7-text-container';
     
@@ -330,9 +347,11 @@ ul.appendChild(li4);
 
     textsContainer.appendChild(h1)
      textsContainer.appendChild(ul)
-    
+     
+     parentContainer.appendChild(imageContainer)    
     parentContainer.appendChild(textsContainer)
-    
+
+
     return parentContainer
     }
 
