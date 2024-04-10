@@ -15,6 +15,7 @@ import './Lora-SemiBold.ttf';
 
 function instructorName() {
     const div = document.createElement('div');
+    div.id = 'home-logo'
     const image = new Image();
 image.src = logoWhite;
 image.alt = 'glow on flow logo... go home '
@@ -93,6 +94,7 @@ h1.classList.add('titles')
 const p = document.createElement('p');
 // p.id = 'section-1-paragraph';
 p.id = 'paragraph-description';
+p.classList.add('paragraphs')
 // h1.innerHTML = '';
 
 // Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches 
@@ -156,6 +158,7 @@ h1.textContent = 'glow on flows mission'
   
 const p2 = document.createElement('p')
 p2.id = 'section-2-paragraph';
+p2.classList.add('paragraphs')
 p2.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
 
 const button = document.createElement('button')
@@ -206,6 +209,7 @@ const p1 = document.createElement('p')
 
     const p = document.createElement('p')
     p.id = 'section-3-paragraph';
+    p.classList.add('paragraphs')
     p.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
     
     const button = document.createElement('a')

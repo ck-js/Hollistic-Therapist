@@ -2,7 +2,10 @@
 --primary-background-color: rgb(220, 198, 165);
 --title-font-family: london;
 --paragraph-font-family: chamsbold;
-margin-top: 300px;
+--desktop-titles-font-size: 2.2rem;
+--desktop-paragraph-font-size: 1.6rem;
+--mobile-titles-font-size: 1.7rem;
+--mobile-paragraph-font-size: 1.2rem;
 }
 
 @font-face {
@@ -21,19 +24,18 @@ margin-top: 300px;
   }
 body {
     font-family: var(--paragraph-font-family);
-    /* font-family: var(--title-font-family); */
     /* background: linear-gradient(135deg, #b3b4ff43, #FFB3B3); */
-    
     background-color: var(--primary-background-color);
     color: black;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0;
     margin: 0;
 }
 .titles {
     font-family: var(--title-font-family);
     color: var(--primary-background-color);
+    font-size: var(--desktop-titles-font-size);
 }
 #nav-container ul {
 display: flex;
@@ -51,19 +53,19 @@ text-transform: lowercase;
     /* border: 2px solid yellowgreen;     */
     cursor: pointer;
 }
-#nav-container li:hover {
-color: yellowgreen;
+/* #nav-container li:hover {
+color: black;
 
-}
+} */
 #content {
     display: flex;
     flex-direction: column;
-    /* place-items: center; */
+    justify-content: center;
+    align-items: center;
     
     row-gap: 100px;
 }
 #description-container {
-    /* border: 5px solid yellowgreen; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,25 +81,28 @@ height: auto;
 background-size: contain;
     background-position: center;
     width: 100%;
-    /* opacity: 0.7; */
     border-radius: 25px;
 }
-
 #description-container #text-container {
     position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-    /* border: 5px solid yellowgreen; */
-    
-    font-size: 1.5rem;
     
 }
 @media (max-width: 800px) {
-    #description-container #text-container {
-font-size: 1.2rem;
+    .titles {
+        font-size: var(--mobile-titles-font-size);
     }
-    
+    #paragraph-description {
+        font-size: var(--mobile-paragraph-font-size);
+    }
+    .paragraphs {
+        font-size: var(--mobile-paragraph-font-size);
+    }
+    #section-7-image-container {
+        width: 0;
+    }
 }
 
 #text-container h1 {    
@@ -114,14 +119,11 @@ margin-bottom: 20%;
 color: white;
 }
 .bio {
-    background: linear-gradient(135deg, #fbfafd, #f5deb3);
-
-
-    
+    background: linear-gradient(135deg, #fbfafd, #f5deb3);    
 }
 #section-2-parent-container {
     width: 80vw;
-    height: 800px;
+    height: auto;
     margin-left: auto;
     margin-right: auto; 
     display: flex;
@@ -130,7 +132,7 @@ color: white;
     flex-direction: column;
     position: relative;
     text-align: right;
-
+    padding: 100px 0 200px;
 }
 /* #section-2-parent-container:hover {
 border-left: 15px solid #7315cb;
@@ -139,7 +141,7 @@ border-left: 15px solid #7315cb;
     width: 80%;
     height: auto;
     padding-left: 20%;
-    /* border: 3px solid black; */
+    
 }
 #section-2-image-wrapper {
     width: 40%;
@@ -194,16 +196,14 @@ color: black;
     color: var(--primary-background-color);
     
     
-    
     }
 #section-2-title {
     color: black;
-font-size: 2.2rem;
     
 }
 #section-2-paragraph {
     color: black;
-font-size: 1.2rem;
+font-size: var(--desktop-paragraph-font-size);
 opacity: 0.7;    
 }
 
@@ -218,7 +218,7 @@ opacity: 0.7;
     flex-direction: column;
     position: relative;
     text-align: left;
-    margin-top: -100px;
+    
 
 }
 #section-3-parent-container img {
@@ -231,8 +231,6 @@ opacity: 0.7;
 /* #section-3-parent-container:hover {
     border-right: 15px solid #7315cb;
     } */
-
-
 #section-3-text-container {
     position: absolute;
     top: 50%;
@@ -245,7 +243,6 @@ opacity: 0.7;
 }
 #section-3-title {
     color: white;
-font-size: 2.2rem;
     
 }
 #span-1 {
@@ -254,7 +251,7 @@ font-size: 2.2rem;
 }
 #section-3-paragraph {
     color: white;
-font-size: 1.2rem;
+font-size: var(--desktop-paragraph-font-size);
 background-color: rgba(0, 0, 0, 0.3);
 padding: 2px 2px;
 box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.5);
@@ -270,8 +267,6 @@ margin-bottom: 50px;
     
 
     }
-
-
 
 #section-4-parent-container {
     width: 80vw;
@@ -302,13 +297,13 @@ height: auto;
 }
 #section-4-paragraph {
     opacity: 0.7;
-font-size: 1.2rem;
+font-size: var(--desktop-paragraph-font-size);
  font-style: italic;   
  
 }
 #section-4-title {
     color: black;
-font-size: 2.2rem;
+
 margin-bottom: 40px;
     
 }
@@ -332,7 +327,7 @@ color: black;
     flex-direction: column;
     position: relative;
     text-align: left;
-    margin-top: -100px;
+    /* margin-top: -100px; */
 
 }
 #section-5-text-container {
@@ -371,7 +366,7 @@ font-size: 1.2rem;
     flex-direction: column;
     position: relative;
     text-align: left;
-    margin-top: -100px;
+    /* margin-top: -100px; */
 
 }
 #section-6-text-container {
@@ -386,9 +381,6 @@ opacity: 0.8;
     border-left: 5px solid black;
     padding-left: 20px;
     }
-
-
-
 
 #section-6-title {
     color: black;
@@ -456,12 +448,11 @@ background: linear-gradient(135deg, #DAB3FF, #FFB3B3);
 
 #section-7-title {
     color: black;
-font-size: 2.2rem;
     
 }
 #section-7-paragraph {
     color: black;
-font-size: 1.2rem;
+
     
 } 
 #section-7-text-container li {
@@ -480,8 +471,7 @@ font-size: 1.2rem;
     flex-direction: column;
     position: relative;
     text-align: left;
-    margin-top: -100px;
-
+    
 }
 #section-8-cards-container {
 
@@ -507,7 +497,8 @@ padding: 200px 0;
 }
 }
 #eye-icon {
-    width: auto;
+    width: 200px;
+    height: auto;
     
 }
 .card-item h5 {
@@ -515,9 +506,8 @@ padding: 200px 0;
     font-family: var(--title-font-family);
 }
 
-
 #section-9-parent-container {
-    width: 60vw;
+    width: 100vw;
     height: 800px;
     background: linear-gradient(135deg, #B3FFD9, #8e32e5);
     margin-left: auto;
@@ -528,7 +518,7 @@ padding: 200px 0;
     flex-direction: column;
     position: relative;
     text-align: left;
-    margin-top: -100px;
+    
 
 }
 #section-9-text-container {
@@ -542,7 +532,7 @@ height: auto;
 
 #section-9-title {
     color: black;
-font-size: 2.2rem;
+
     
 }
 #section-9-text-container h6 {
