@@ -26,12 +26,9 @@ setInterval(flipChartTitle, 2000);
 
 contentOutput.appendChild(section4Component())
 
-
 contentOutput.appendChild(section2Component())
 
 contentOutput.appendChild(section3Component())
-
-
 
 // contentOutput.appendChild(section5Component())
 
@@ -43,3 +40,4 @@ contentOutput.appendChild(section8Component())
 
 contentOutput.appendChild(section9Component())
 
+contentOutput.appendChild(instructorName())

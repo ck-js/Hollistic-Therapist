@@ -4,6 +4,11 @@ import section2Image from './section2image2.jpg'
 import section3Image from './section3image.jpg'
 import section7Image from './section7image.jpg'
 import eyeIconSvg from './logo2.png';
+import facebookLogo from './Social-media-icons/facebook.svg'
+import instagramLogo from './Social-media-icons/instagram.svg'
+import whatsappLogo from './Social-media-icons/whatsapp.svg'
+import googleMapsLogo from './Social-media-icons/google-maps.svg'
+
 import './chamsbold.ttf';
 import './Lora-SemiBold.ttf';
 
@@ -466,23 +471,113 @@ function section9Component() {
     
     const h1 = document.createElement('h1');
     h1.id = 'section-7-title';
-    h1.textContent = "Contact Paula";
+    h1.classList.add('titles')
+    h1.textContent = "Contact Preechaya";
     
 const hr = document.createElement('hr')
 
     const p = document.createElement('h6')
-    p.id = 'section-7-paragraph';
-    p.textContent = "+66 123456789";
-    
+    const aTel = document.createElement('a');
+    p.id = 'section-7-tel';
+    aTel.textContent = "Phone: +66 83 293 5905";
+    aTel.href = 'tel:+66832935905'
+    p.appendChild(aTel)
+
     const p2 = document.createElement('h6')
     p2.id = 'section-7-paragraph-2';
-    p2.textContent = "paulasmoonbythesea@gmail.com";
+    const aMail = document.createElement('a');
+    aMail.href = 'mailto:chayawellnessth@gmail.com';
+    aMail.textContent = 'Email: chayawellnessth@gmail.com';
+p2.appendChild(aMail)
     
+const socialIconsContainer = document.createElement('div');
+socialIconsContainer.id = 'section-9-socials-container';
+// facebook
+const facebookWrapper = document.createElement('div');
+facebookWrapper.classList.add('socials-wrapper')
+
+const facebookLink = document.createElement('a');
+facebookLink.href = 'https://facebook.com';
+
+const facebook = new Image();
+facebook.classList.add('socials')
+facebook.src = facebookLogo;
+facebook.alt = 'click to message us on facebook'
+facebookLink.appendChild(facebook)
+
+const anchorFacebook = document.createElement('a');
+anchorFacebook.href = 'https://facebook.com'
+anchorFacebook.textContent = 'Message us on Facebook'
+
+facebookWrapper.appendChild(facebookLink)
+facebookWrapper.appendChild(anchorFacebook)
+// instagram
+const instagramWrapper = document.createElement('div');
+instagramWrapper.classList.add('socials-wrapper')    
+const instagramLink = document.createElement('a');
+instagramLink.href = '';
+const instagram = new Image();
+instagram.classList.add('socials')
+instagram.src = instagramLogo;
+instagramLink.appendChild(instagram);
+
+const anchorInstagram = document.createElement('a');
+anchorInstagram.href = '';
+anchorInstagram.textContent = 'Explore our Instagram'
+
+instagramWrapper.appendChild(instagramLink);
+instagramWrapper.appendChild(anchorInstagram);
+
+// whatsapp
+const whatsapWrapper = document.createElement('div');
+whatsapWrapper.classList.add('socials-wrapper')    
+const whatsappLink = document.createElement('a');
+whatsappLink.href = '';
+const whatsapp = new Image();
+whatsapp.classList.add('socials')
+whatsapp.src = whatsappLogo;
+whatsappLink.appendChild(whatsapp);
+
+const anchorWhatsapp = document.createElement('a');
+anchorWhatsapp.href = '';
+anchorWhatsapp.textContent = 'Call / Message our Whatsapp'
+
+whatsapWrapper.appendChild(whatsappLink);
+whatsapWrapper.appendChild(anchorWhatsapp);
+
+// google maps
+const googleMapsWrapper = document.createElement('div');
+googleMapsWrapper.classList.add('socials-wrapper')    
+const googlemapsLink = document.createElement('a');
+googlemapsLink.href = '';
+
+const googleMaps = new Image();
+googleMaps.classList.add('socials')
+googleMaps.src = googleMapsLogo;
+googlemapsLink.appendChild(googleMaps);
+
+const anchorGoogleMaps = document.createElement('a');
+anchorGoogleMaps.href = '';
+anchorGoogleMaps.textContent = 'Find our location'
+
+googleMapsWrapper.appendChild(googlemapsLink);
+googleMapsWrapper.appendChild(anchorGoogleMaps);
+
+
+socialIconsContainer.appendChild(facebookWrapper);
+socialIconsContainer.appendChild(instagramWrapper);
+socialIconsContainer.appendChild(whatsapWrapper);
+socialIconsContainer.appendChild(googleMapsWrapper);
+const hr2 = document.createElement('hr')
+
     textsContainer.appendChild(h1)
     textsContainer.appendChild(hr)
      textsContainer.appendChild(p)
      textsContainer.appendChild(p2)
-    
+     textsContainer.appendChild(hr2)
+     textsContainer.appendChild(socialIconsContainer)
+     
+
     parentContainer.appendChild(textsContainer)
     
     return parentContainer
@@ -507,8 +602,6 @@ const hr = document.createElement('hr')
       
         h1Element.innerHTML = words.join(' ');
       }
-
-
 
 
 
