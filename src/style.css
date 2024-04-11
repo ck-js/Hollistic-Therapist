@@ -137,7 +137,7 @@ transform: translate(-50%, -50%);
 
     #section-3-text-container a {
 font-size: var(--mobile-paragraph-font-size);
-
+padding: 0;
     }
     
     
@@ -249,7 +249,7 @@ opacity: 0.7;
 
 #section-3-parent-container {
     width: 100%;
-    height: 700px;
+    height: auto;
     margin-left: auto;
     margin-right: auto; 
     /* display: flex;
@@ -259,20 +259,21 @@ opacity: 0.7;
     position: relative;
     text-align: left;
     
-border: 5px solid white;
+/* border: 10px solid blueviolet; */
 }
 #section-3-image-wrapper {
     width: 100%;
     height: 100%;
-border: 3px solid black;
-background-image: url('./section3image.JPG');
-background-size: cover;
-background-repeat: repeat-y;
-background-position: center;
+/* border: 3px solid black; */
+/* background-image: url('./section3image.JPG'); */
+
 
 }
+#section-3-image-wrapper img {
 
-
+object-fit: repeat;
+object-position: center;
+}
 #section-3-text-container {
     position: absolute;
     top: 50%;
