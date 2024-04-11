@@ -7,7 +7,7 @@
 --desktop-titles-font-size: 2.2rem;
 --desktop-paragraph-font-size: 1.6rem;
 --mobile-titles-font-size: 1.1rem;
---mobile-paragraph-font-size: 1rem;
+--mobile-paragraph-font-size: 0.7rem;
 
 }
 
@@ -114,7 +114,7 @@ transform: translate(-50%, -50%);
     object-fit: contain;
     object-position: center;
 } 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .home-logo {
         width: 100px;
         align-self: center;
@@ -136,10 +136,14 @@ transform: translate(-50%, -50%);
 }
 
     #section-3-text-container a {
-font-size: var(--mobile-paragraph-font-size);
+/* font-size: var(--mobile-paragraph-font-size); */
+font-size: 0.7rem;
 padding: 0;
+padding-bottom: 20px;
     }
-    
+    #section-3-text-container {
+        
+    }
     
     
     
