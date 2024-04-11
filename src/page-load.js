@@ -41,11 +41,18 @@ for (let i = 0; i < navItems.length; i++) {
 const liElement = document.createElement('li');
 // set id of list items
 liElement.id = navItems[i]
+
+// create anchor element
+const anchorElement = document.createElement('a');
+anchorElement.id = navItems[i] + '-anchor';
+liElement.appendChild(anchorElement)
+
 // set text content of each li element
-liElement.textContent = navItems[i];
+anchorElement.textContent = navItems[i];
 
 // append li elements to ul element
 ulElement.appendChild(liElement);
+
 
 // liElement.addEventListener('click', (event) => {
 //     alert('hello' + event.target.textContent)
@@ -163,6 +170,7 @@ p2.textContent = "Our mission is to change how women think about aging by embrac
 
 const button = document.createElement('button')
 const anchor = document.createElement('a');
+anchor.href = '#section-8-parent-container';
 button.appendChild(anchor)
 anchor.textContent = 'Learn More';
 
@@ -499,7 +507,7 @@ const facebookWrapper = document.createElement('div');
 facebookWrapper.classList.add('socials-wrapper')
 
 const facebookLink = document.createElement('a');
-facebookLink.href = 'https://facebook.com';
+facebookLink.href = 'https://web.facebook.com/chayawellnessth/?_rdc=1&_rdr';
 
 const facebook = new Image();
 facebook.classList.add('socials')
@@ -508,7 +516,7 @@ facebook.alt = 'click to message us on facebook'
 facebookLink.appendChild(facebook)
 
 const anchorFacebook = document.createElement('a');
-anchorFacebook.href = 'https://facebook.com'
+anchorFacebook.href = 'https://web.facebook.com/chayawellnessth/?_rdc=1&_rdr'
 anchorFacebook.textContent = 'Message us on Facebook'
 
 facebookWrapper.appendChild(facebookLink)
@@ -517,14 +525,14 @@ facebookWrapper.appendChild(anchorFacebook)
 const instagramWrapper = document.createElement('div');
 instagramWrapper.classList.add('socials-wrapper')    
 const instagramLink = document.createElement('a');
-instagramLink.href = '';
+instagramLink.href = 'https://www.instagram.com/chayawellnessth/';
 const instagram = new Image();
 instagram.classList.add('socials')
 instagram.src = instagramLogo;
 instagramLink.appendChild(instagram);
 
 const anchorInstagram = document.createElement('a');
-anchorInstagram.href = '';
+anchorInstagram.href = 'https://www.instagram.com/chayawellnessth/';
 anchorInstagram.textContent = 'Explore our Instagram'
 
 instagramWrapper.appendChild(instagramLink);
@@ -534,14 +542,14 @@ instagramWrapper.appendChild(anchorInstagram);
 const whatsapWrapper = document.createElement('div');
 whatsapWrapper.classList.add('socials-wrapper')    
 const whatsappLink = document.createElement('a');
-whatsappLink.href = '';
+whatsappLink.href = 'https://api.whatsapp.com/send/?phone=66832935905&text&type=phone_number&app_absent=0';
 const whatsapp = new Image();
 whatsapp.classList.add('socials')
 whatsapp.src = whatsappLogo;
 whatsappLink.appendChild(whatsapp);
 
 const anchorWhatsapp = document.createElement('a');
-anchorWhatsapp.href = '';
+anchorWhatsapp.href = 'https://api.whatsapp.com/send/?phone=66832935905&text&type=phone_number&app_absent=0';
 anchorWhatsapp.textContent = 'Call / Message our Whatsapp'
 
 whatsapWrapper.appendChild(whatsappLink);
@@ -551,7 +559,7 @@ whatsapWrapper.appendChild(anchorWhatsapp);
 const googleMapsWrapper = document.createElement('div');
 googleMapsWrapper.classList.add('socials-wrapper')    
 const googlemapsLink = document.createElement('a');
-googlemapsLink.href = '';
+googlemapsLink.href = 'https://www.google.com/maps/place/Chaya+Wellness+-+Holistic+Facial+Massage/@9.756151,99.9687052,17z/data=!3m1!4b1!4m6!3m5!1s0x305501e808735d41:0x81816732eba7d8fb!8m2!3d9.756151!4d99.9687052!16s%2Fg%2F11tdcwzdbh?hl=en-TH&entry=ttu';
 
 const googleMaps = new Image();
 googleMaps.classList.add('socials')
@@ -559,7 +567,7 @@ googleMaps.src = googleMapsLogo;
 googlemapsLink.appendChild(googleMaps);
 
 const anchorGoogleMaps = document.createElement('a');
-anchorGoogleMaps.href = '';
+anchorGoogleMaps.href = 'https://www.google.com/maps/place/Chaya+Wellness+-+Holistic+Facial+Massage/@9.756151,99.9687052,17z/data=!3m1!4b1!4m6!3m5!1s0x305501e808735d41:0x81816732eba7d8fb!8m2!3d9.756151!4d99.9687052!16s%2Fg%2F11tdcwzdbh?hl=en-TH&entry=ttu';
 anchorGoogleMaps.textContent = 'Find our location'
 
 googleMapsWrapper.appendChild(googlemapsLink);

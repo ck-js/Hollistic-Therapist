@@ -41,3 +41,12 @@ contentOutput.appendChild(section8Component())
 contentOutput.appendChild(section9Component())
 
 contentOutput.appendChild(instructorName())
+
+
+// set href attributes to in page link of each nav item
+const about = document.getElementById('About-anchor')
+about.href = '#section-2-parent-container';
+const training = document.getElementById('Training-anchor')
+training.href = '#section-7-parent-container';
+const contact = document.getElementById('Contact-anchor')
+contact.href = '#section-9-parent-container';

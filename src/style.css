@@ -140,6 +140,7 @@ transform: translate(-50%, -50%);
 font-size: 0.7rem;
 padding: 0;
 padding-bottom: 20px;
+border: none;
     }
     #section-3-text-container {
         
@@ -302,11 +303,11 @@ object-position: center;
 background-color: rgba(0, 0, 0, 0.3);
 padding: 2px 2px;
 box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.5);
-margin-bottom: 50px;
+margin-bottom: 24px;
 
 }
 #section-3-text-container a {
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 10px;
     cursor: pointer;
     text-decoration: none;
@@ -536,7 +537,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 overflow:auto;
-padding: 200px 0;
+
 }
 .card-item {
     height: auto;
