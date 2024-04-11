@@ -15,7 +15,7 @@ import './Lora-SemiBold.ttf';
 
 function instructorName() {
     const div = document.createElement('div');
-    div.id = 'home-logo'
+    div.classList.add('home-logo')
     const image = new Image();
 image.src = logoWhite;
 image.alt = 'glow on flow logo... go home '
@@ -186,12 +186,14 @@ function section3Component() {
     parentContainer.classList.add('bio')
     parentContainer.id = 'section-3-parent-container';
 
+const imageWrapper = document.createElement('div');
+imageWrapper.id = 'section-3-image-wrapper';
 const image = new Image();
 image.src = section3Image;
 
-parentContainer.appendChild(image)
-
-    parentContainer.style.backgroundImage = 'url(image)'
+imageWrapper.appendChild(image)
+parentContainer.appendChild(imageWrapper)
+    // parentContainer.style.backgroundImage = 'url(image)'
 
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-3-text-container';
@@ -331,21 +333,17 @@ function section7Component() {
     imageWrapper.appendChild(image)
     imageContainer.appendChild(imageWrapper)
 
-
-
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-7-text-container';
     
     const h1 = document.createElement('h1');
     h1.id = 'section-7-title';
+    h1.classList.add('titles')
     h1.textContent = "Education & Certifications";
     // wrapWordInSpan('Paula', h1)
-
-    // const p = document.createElement('p')
-    // p.id = 'section-7-paragraph';
-    // p.textContent = "Paula offers group workshops and one-on-one private sessions to guide individuals back into their mind and body. Her core offerings are rooted in Subtle Body Anatomy (energy body anatomy) and Physical Anatomy, combined with practices such as Yoga, Intuitive Anatomy, African Reflexology, Family & Systemic Constellation, Kinesiology, and Flower Essence Therapy.";
     
 const ul = document.createElement('ul')
+ul.classList.add('paragraphs')
 const li1 = document.createElement('li');
 li1.textContent = 'Certified Facialist by Health & Beauty Development School of Thailand'
 const li2 = document.createElement('li');

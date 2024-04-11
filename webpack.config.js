@@ -10,6 +10,21 @@ module.exports = {
   },
   module: {
     rules: [
+
+{
+      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      type: 'asset/resource',
+    },
+  
+
+
+
+
+
+
+
+
+
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
@@ -18,7 +33,6 @@ module.exports = {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: 'asset/resource',
     },
-
     {
       test: /\.mp4$/,
       use: [
@@ -27,7 +41,8 @@ module.exports = {
           options: {
             name: '[name].[ext]'
           }
-        }
+        },
+        
       ]
     },
 
