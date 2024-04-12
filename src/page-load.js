@@ -1,5 +1,11 @@
 import logoWhite from './logo.png'
-import introVideo from './intro2.mp4';
+// import introVideo from './intro2.mp4';
+import section1Image from './section1image.jpg';
+import services1Image from './services1image.jpg';
+import services2Image from './services2image.jpg';
+import services3Image from './services3image.jpg';
+import services4Image from './services4image.jpg';
+
 import section2Image from './section2image2.jpg'
 import section3Image from './section3image.jpg'
 import section7Image from './section7image.jpg'
@@ -134,6 +140,58 @@ function flipChartTitle() {
   currentIndex = (currentIndex + 1) % flipChartTitles.length;
 }
 
+// section 1 components 
+function section1Component() {
+    const parentContainer = document.createElement('div')
+    parentContainer.classList.add('bio')
+    parentContainer.id = 'section-1-parent-container';
+    
+    const imageContainer = document.createElement('div');
+    imageContainer.id = 'section-1-image-container';
+    
+    const imageWrapper = document.createElement('div');
+    imageWrapper.id = 'section-1-image-wrapper';
+    const image = new Image();
+    image.src = section1Image;
+    image.alt = 'majestic asian woman with eyes closed holding her chest';
+    imageWrapper.appendChild(image)
+    imageContainer.appendChild(imageWrapper)
+
+    const textsContainer = document.createElement('div');
+    textsContainer.id = 'section-1-text-container';
+    
+    const p = document.createElement('p')
+    p.id = 'section-1-paragraph';
+    p.textContent = "A different approach to health and wellness";
+
+    const h1 = document.createElement('h1');
+    h1.id = 'section-1-title';
+    h1.classList.add('titles')
+    h1.textContent = "experience the power of hollistic self-care rituals for radiant skin and wellbeing";
+    
+const button = document.createElement('a')
+button.textContent = 'our work';
+button.href = '#section-2-parent-container'
+button.ariaLabel = 'click to discover our work'
+    
+     textsContainer.appendChild(p)
+    textsContainer.appendChild(h1)
+    textsContainer.appendChild(button)
+
+
+
+     parentContainer.appendChild(imageContainer)    
+    parentContainer.appendChild(textsContainer)
+
+
+    return parentContainer
+    }
+
+
+
+
+
+
 // section 2 components 
 function section2Component() {
 const parentContainer = document.createElement('div')
@@ -248,20 +306,46 @@ function section4Component() {
     
 const p = document.createElement('p')
     p.id = 'section-4-paragraph';
-    p.textContent = "- embrace your unique journey -";
+    p.textContent = "About Me";
 
     const h1 = document.createElement('h1');
     h1.id = 'section-4-title';
     h1.classList.add('titles')
-    h1.textContent = "experience the power of hollistic self-care rituals for radiant skin and wellbeing";
+    h1.textContent = "Helping you make better health choices";
     
+    const p2 = document.createElement('p')
+    p2.id = 'section-4-paragraph-2';
+    p2.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
+
+    const p3 = document.createElement('p')
+    p3.id = 'section-4-paragraph-3';
+    p3.textContent = "My journey began when I became certified as a holistic facialist and integrative vibrational therapist. I blended my passion for wellness and sound healing into my facial treatments, which led me to establish Chaya Wellness, a holistic well-being studio in Koh Phangan.";
+
+    const p4 = document.createElement('p')
+    p4.id = 'section-4-paragraph-4';
+    p4.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
+
+
+    const p5 = document.createElement('p')
+    p5.id = 'section-4-paragraph-5';
+    p5.textContent = "While Chaya Wellness offers in-person treatments, I'm excited to share my knowledge with a broader audience through Glow on Flow, sharing my holistic skincare approach with those seeking to enhance their inner glow.";
+
+    const p6 = document.createElement('p')
+    p6.id = 'section-4-paragraph-6';
+    p6.textContent = "Are you ready to join me on the journey?";
+
 const button = document.createElement('a')
-button.textContent = 'Discover'
+button.textContent = 'Learn more'
 button.href = '#section-2-parent-container'
-button.ariaLabel = 'click to discover'
+button.ariaLabel = 'click to learn more'
     
      textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
+    textsContainer.appendChild(p2)
+    textsContainer.appendChild(p3)
+    textsContainer.appendChild(p4)
+    textsContainer.appendChild(p5)
+    textsContainer.appendChild(p6)
     textsContainer.appendChild(button)
     
     
@@ -366,7 +450,6 @@ ul.appendChild(li2);
 ul.appendChild(li3);
 ul.appendChild(li4);
 
-
     textsContainer.appendChild(h1)
      textsContainer.appendChild(ul)
      
@@ -395,9 +478,10 @@ const cardItem4 = document.createElement('div')
 cardItem4.classList.add('card-item')
 
 let eyeIcon = new Image();
-eyeIcon.src = eyeIconSvg; 
-eyeIcon.alt = 'hello there'
-eyeIcon.id = 'eye-icon'
+eyeIcon.src = services1Image; 
+eyeIcon.alt = 'close up of women getting face treatment'
+eyeIcon.id = 'eye-icon-1';
+eyeIcon.classList.add('services-image');
 cardItem1.style.backgroundImage = 'url(eyeIcon)'
 
 const cardTitle = document.createElement('h5')
@@ -412,9 +496,10 @@ cardItem1.appendChild(cardDescription)
 
 
 const eyeIcon2 = new Image();
-eyeIcon2.src = eyeIconSvg; 
-eyeIcon2.alt = 'hello there'
-eyeIcon2.id = 'eye-icon'
+eyeIcon2.src = services2Image; 
+eyeIcon2.alt = 'women in spa holding her face'
+eyeIcon2.id = 'eye-icon-2'
+eyeIcon2.classList.add('services-image')
 cardItem2.style.backgroundImage = 'url(eyeIcon2)'
 
 const cardTitle2 = document.createElement('h5')
@@ -429,9 +514,10 @@ cardItem2.appendChild(cardDescription2)
 
 
 const eyeIcon3 = new Image();
-eyeIcon3.src = eyeIconSvg; 
-eyeIcon3.alt = 'hello there'
-eyeIcon3.id = 'eye-icon'
+eyeIcon3.src = services3Image;
+eyeIcon3.alt = 'portrait of women wearing white dress'
+eyeIcon3.id = 'eye-icon-3'
+eyeIcon3.classList.add('services-image')
 cardItem3.style.backgroundImage = 'url(eyeIcon3)'
 
 const cardTitle3 = document.createElement('h5')
@@ -446,16 +532,17 @@ cardItem3.appendChild(cardDescription3)
 
 
 const eyeIcon4 = new Image();
-eyeIcon4.src = eyeIconSvg; 
-eyeIcon4.alt = 'hello there'
-eyeIcon4.id = 'eye-icon'
+eyeIcon4.src = services4Image;
+eyeIcon4.alt = 'portrait of women white dress forest background'
+eyeIcon4.id = 'eye-icon-4';
+eyeIcon4.classList.add('services-image');
 cardItem4.style.backgroundImage = 'url(eyeIcon4)'
 
 const cardTitle4 = document.createElement('h5')
-cardTitle4.textContent = 'Self-Care Resources:';
+cardTitle4.textContent = 'Collaboration Oppurtunities';
 
 const cardDescription4 = document.createElement('p');
-cardDescription4.textContent = "Through my self-care resources, you can access a wealth of holistic beauty education. Explore self-facial massage techniques, gua sha practices, and more on my social media platforms and newsletter. Stay connected and informed by subscribing to my email list, where you'll receive exclusive tips, updates, and links to all my channels.";
+cardDescription4.textContent = "I'm eager to collaborate with spas, beauty salons, and wellness retreats worldwide. Whether as a guest therapist offering in-person treatments or as part of your workshop or retreat teaching team, I bring expertise in holistic facial care. Email me to explore collaboration opportunities.";
 
 cardItem4.appendChild(eyeIcon4)
 cardItem4.appendChild(cardTitle4)
@@ -621,6 +708,7 @@ export {
       section1Description,
        pageLoadNav,
        flipChartTitle,
+       section1Component,
        section2Component,
        section3Component,
        section4Component,
