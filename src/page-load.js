@@ -1,5 +1,5 @@
 import logoWhite from './logo.png'
-// import introVideo from './intro2.mp4';
+
 import section1Image from './section1image.jpg';
 import services1Image from './services1image.jpg';
 import services2Image from './services2image.jpg';
@@ -19,126 +19,126 @@ import './chamsbold.ttf';
 import './Lora-SemiBold.ttf';
 
 
-function instructorName() {
-    const div = document.createElement('div');
-    div.classList.add('home-logo')
-    const image = new Image();
-image.src = logoWhite;
-image.alt = 'glow on flow logo... go home '
+// function instructorName() {
+//     const div = document.createElement('div');
+//     div.classList.add('home-logo')
+//     const image = new Image();
+// image.src = logoWhite;
+// image.alt = 'glow on flow logo... go home '
 
 
-div.appendChild(image)
+// div.appendChild(image)
 
-    return div;
-}
-function pageLoadNav() {
-// create nav container 
-    const navContainer = document.createElement('div');
-navContainer.id = 'nav-container';
-// create ul element 
-const ulElement = document.createElement('ul');
-ulElement.id = 'nav-ul';
-// create array of list items
-const navItems = ['About', 'Training', 'Contact']
+//     return div;
+// }
+// function pageLoadNav() {
+// // create nav container 
+//     const navContainer = document.createElement('div');
+// navContainer.id = 'nav-container';
+// // create ul element 
+// const ulElement = document.createElement('ul');
+// ulElement.id = 'nav-ul';
+// // create array of list items
+// const navItems = ['About', 'Training', 'Contact']
 
-// loop through nav items
-for (let i = 0; i < navItems.length; i++) {
-// create li element
-const liElement = document.createElement('li');
-// set id of list items
-liElement.id = navItems[i]
+// // loop through nav items
+// for (let i = 0; i < navItems.length; i++) {
+// // create li element
+// const liElement = document.createElement('li');
+// // set id of list items
+// liElement.id = navItems[i]
 
-// create anchor element
-const anchorElement = document.createElement('a');
-anchorElement.id = navItems[i] + '-anchor';
-liElement.appendChild(anchorElement)
+// // create anchor element
+// const anchorElement = document.createElement('a');
+// anchorElement.id = navItems[i] + '-anchor';
+// liElement.appendChild(anchorElement)
 
-// set text content of each li element
-anchorElement.textContent = navItems[i];
+// // set text content of each li element
+// anchorElement.textContent = navItems[i];
 
-// append li elements to ul element
-ulElement.appendChild(liElement);
+// // append li elements to ul element
+// ulElement.appendChild(liElement);
 
 
-// liElement.addEventListener('click', (event) => {
-//     alert('hello' + event.target.textContent)
-// })
-}
-// append ul element to nav container
-navContainer.appendChild(ulElement)
+// // liElement.addEventListener('click', (event) => {
+// //     alert('hello' + event.target.textContent)
+// // })
+// }
+// // append ul element to nav container
+// navContainer.appendChild(ulElement)
 
-return navContainer;
+// return navContainer;
 
-}
+// }
 
-function yogaPoseImage() {
-    const descriptionContainer = document.createElement('div');
-    const imgContainer = document.createElement('div');
+// function yogaPoseImage() {
+//     const descriptionContainer = document.createElement('div');
+//     const imgContainer = document.createElement('div');
 
-descriptionContainer.id = 'description-container';
-imgContainer.id = 'img-container';
+// descriptionContainer.id = 'description-container';
+// imgContainer.id = 'img-container';
 
-    // const img = new Image();
-    // img.src = yogaPoseImg;
-    // img.alt = 'women holding yoga pose with full moon in background';
+//     // const img = new Image();
+//     // img.src = yogaPoseImg;
+//     // img.alt = 'women holding yoga pose with full moon in background';
 
-const videoElement = document.createElement('video')
-videoElement.src = introVideo;
-videoElement.autoplay = true;
-videoElement.loop = true;
-videoElement.muted = true;
-// videoElement.alt = 'scenic video of a women with moving landscape between forest and ocean sunset'
+// const videoElement = document.createElement('video')
+// videoElement.src = introVideo;
+// videoElement.autoplay = true;
+// videoElement.loop = true;
+// videoElement.muted = true;
+// // videoElement.alt = 'scenic video of a women with moving landscape between forest and ocean sunset'
 
-imgContainer.style.backgroundImage = 'url(introVideo)'
+// imgContainer.style.backgroundImage = 'url(introVideo)'
 
-    descriptionContainer.appendChild(imgContainer)
-imgContainer.appendChild(videoElement)
+//     descriptionContainer.appendChild(imgContainer)
+// imgContainer.appendChild(videoElement)
 
-    return descriptionContainer;
-}
-function section1Description() {
+//     return descriptionContainer;
+// }
+// function section1Description() {
 
-    const div = document.createElement('div');
-    div.id = 'text-container';
-const h1 = document.createElement('h1');
-h1.id = 'section-1-title';
-h1.classList.add('titles')
+//     const div = document.createElement('div');
+//     div.id = 'text-container';
+// const h1 = document.createElement('h1');
+// h1.id = 'section-1-title';
+// h1.classList.add('titles')
     
-const p = document.createElement('p');
-// p.id = 'section-1-paragraph';
-p.id = 'paragraph-description';
-p.classList.add('paragraphs')
-// h1.innerHTML = '';
+// const p = document.createElement('p');
+// // p.id = 'section-1-paragraph';
+// p.id = 'paragraph-description';
+// p.classList.add('paragraphs')
+// // h1.innerHTML = '';
 
-// Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches 
-// Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.
+// // Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches 
+// // Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.
 
-p.textContent = "Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches";
+// p.textContent = "Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches";
 
-div.appendChild(h1)
-div.appendChild(p)
+// div.appendChild(h1)
+// div.appendChild(p)
 
-return div;
-}
+// return div;
+// }
 
-const flipChartTitles = [
-    'glowing skin',
-    'empowerment',
- 'female community',
-  'inner wellbeing',
-   'hollistic self care',
-    'embracing the journey',
-'beauty',
+// const flipChartTitles = [
+//     'glowing skin',
+//     'empowerment',
+//  'female community',
+//   'inner wellbeing',
+//    'hollistic self care',
+//     'embracing the journey',
+// 'beauty',
 
-    ];
-    let currentIndex = 0;
-function flipChartTitle() {
+//     ];
+//     let currentIndex = 0;
+// function flipChartTitle() {
     
-  const flipChartElement = document.getElementById("section-1-title");
-  flipChartElement.textContent = flipChartTitles[currentIndex];
+//   const flipChartElement = document.getElementById("section-1-title");
+//   flipChartElement.textContent = flipChartTitles[currentIndex];
   
-  currentIndex = (currentIndex + 1) % flipChartTitles.length;
-}
+//   currentIndex = (currentIndex + 1) % flipChartTitles.length;
+// }
 
 // section 1 components 
 function section1Component() {
@@ -148,21 +148,25 @@ function section1Component() {
     
     const imageContainer = document.createElement('div');
     imageContainer.id = 'section-1-image-container';
-    
+
     const imageWrapper = document.createElement('div');
     imageWrapper.id = 'section-1-image-wrapper';
     const image = new Image();
     image.src = section1Image;
     image.alt = 'majestic asian woman with eyes closed holding her chest';
+    
+    imageWrapper.style.backgroundImage = 'url(image)';
     imageWrapper.appendChild(image)
     imageContainer.appendChild(imageWrapper)
 
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-1-text-container';
     
+const image2 = new Image();
+image2.src = eyeIconSvg;
     const p = document.createElement('p')
     p.id = 'section-1-paragraph';
-    p.textContent = "A different approach to health and wellness";
+    p.textContent = "Where skin glows, energy flows";
 
     const h1 = document.createElement('h1');
     h1.id = 'section-1-title';
@@ -170,11 +174,12 @@ function section1Component() {
     h1.textContent = "experience the power of hollistic self-care rituals for radiant skin and wellbeing";
     
 const button = document.createElement('a')
-button.textContent = 'our work';
-button.href = '#section-2-parent-container'
+button.textContent = 'learn more';
+button.href = '#section-4-parent-container'
 button.ariaLabel = 'click to discover our work'
-    
-     textsContainer.appendChild(p)
+
+textsContainer.appendChild(image2)
+textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
     textsContainer.appendChild(button)
 
@@ -193,58 +198,58 @@ button.ariaLabel = 'click to discover our work'
 
 
 // section 2 components 
-function section2Component() {
-const parentContainer = document.createElement('div')
-parentContainer.classList.add('bio')
-parentContainer.id = 'section-2-parent-container';
+// function section2Component() {
+// const parentContainer = document.createElement('div')
+// parentContainer.classList.add('bio')
+// parentContainer.id = 'section-2-parent-container';
 
-const imageContainer = document.createElement('div');
-imageContainer.id = 'section-2-image-container';
+// const imageContainer = document.createElement('div');
+// imageContainer.id = 'section-2-image-container';
 
-const imageWrapper = document.createElement('div');
-imageWrapper.id = 'section-2-image-wrapper';
-const image = new Image();
-image.src = section2Image;
-image.alt = 'majestic asian woman with eyes closed holding her chest';
-imageWrapper.appendChild(image)
-imageContainer.appendChild(imageWrapper)
+// const imageWrapper = document.createElement('div');
+// imageWrapper.id = 'section-2-image-wrapper';
+// const image = new Image();
+// image.src = section2Image;
+// image.alt = 'majestic asian woman with eyes closed holding her chest';
+// imageWrapper.appendChild(image)
+// imageContainer.appendChild(imageWrapper)
 
-const textsContainer = document.createElement('div');
-textsContainer.id = 'section-2-text-container';
+// const textsContainer = document.createElement('div');
+// textsContainer.id = 'section-2-text-container';
 
-const p1 = document.createElement('p')
-p1.id = 'section-2-paragraph-1';
-p1.textContent = "- rejuvenate your mind and soul -";
+// const p1 = document.createElement('p')
+// p1.id = 'section-2-paragraph-1';
+// p1.textContent = "- rejuvenate your mind and soul -";
 
-const h1 = document.createElement('h1');
-h1.id = 'section-2-title';
-h1.classList.add('titles')
-h1.textContent = 'glow on flows mission'
+// const h1 = document.createElement('h1');
+// h1.id = 'section-2-title';
+// h1.classList.add('titles')
+// h1.textContent = 'glow on flows mission'
   
-const p2 = document.createElement('p')
-p2.id = 'section-2-paragraph';
-p2.classList.add('paragraphs')
-p2.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
+// const p2 = document.createElement('p')
+// p2.id = 'section-2-paragraph';
+// p2.classList.add('paragraphs')
+// p2.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
 
-const button = document.createElement('button')
-const anchor = document.createElement('a');
-anchor.href = '#section-8-parent-container';
-button.appendChild(anchor)
-anchor.textContent = 'Learn More';
+// const button = document.createElement('button')
+// const anchor = document.createElement('a');
+// anchor.href = '#section-8-parent-container';
+// button.appendChild(anchor)
+// anchor.textContent = 'Learn More';
 
 
 
-textsContainer.appendChild(p1)
-textsContainer.appendChild(h1)
- textsContainer.appendChild(p2)
- textsContainer.appendChild(button)
+// textsContainer.appendChild(p1)
+// textsContainer.appendChild(h1)
+//  textsContainer.appendChild(p2)
+//  textsContainer.appendChild(button)
 
- parentContainer.appendChild(imageContainer)
-parentContainer.appendChild(textsContainer)
+//  parentContainer.appendChild(imageContainer)
+// parentContainer.appendChild(textsContainer)
 
-return parentContainer
+// return parentContainer
 
-}
+// }
 
 // section 3 components 
 function section3Component() {
@@ -304,42 +309,42 @@ function section4Component() {
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-4-text-container';
     
-const p = document.createElement('p')
-    p.id = 'section-4-paragraph';
-    p.textContent = "About Me";
+// const p = document.createElement('p')
+//     p.id = 'section-4-paragraph';
+//     p.textContent = "About Me";
 
     const h1 = document.createElement('h1');
     h1.id = 'section-4-title';
     h1.classList.add('titles')
-    h1.textContent = "Helping you make better health choices";
+    h1.textContent = "Balancing your inner flow for an outter glow";
     
     const p2 = document.createElement('p')
     p2.id = 'section-4-paragraph-2';
-    p2.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
+    p2.textContent = "I'm Preechaya, and I'm on a mission to reshape our approach to skincare, beauty, and aging.";
 
     const p3 = document.createElement('p')
     p3.id = 'section-4-paragraph-3';
-    p3.textContent = "My journey began when I became certified as a holistic facialist and integrative vibrational therapist. I blended my passion for wellness and sound healing into my facial treatments, which led me to establish Chaya Wellness, a holistic well-being studio in Koh Phangan.";
+    p3.textContent = "As a certified holistic facialist, face yoga teacher, and sound healing practitioner with a firm believe in the mind-body connection, I've crafted sessions that not only focus on the skin's surface but also on overall well-being.";
 
     const p4 = document.createElement('p')
     p4.id = 'section-4-paragraph-4';
-    p4.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
+    p4.textContent = "In 2022, I founded Chaya Wellness, a holistic health and beauty studio on Koh Phangan, offering in-person treatments alongside other therapists who specialize in energy and alternative healing.";
 
 
     const p5 = document.createElement('p')
     p5.id = 'section-4-paragraph-5';
-    p5.textContent = "While Chaya Wellness offers in-person treatments, I'm excited to share my knowledge with a broader audience through Glow on Flow, sharing my holistic skincare approach with those seeking to enhance their inner glow.";
+    p5.textContent = "Through my online platform, Glow on Flow, I aim to share my knowledge and help guide people from all backgrounds towards a more balanced mind, body, and skin with sustainable self-care rituals.";
 
     const p6 = document.createElement('p')
     p6.id = 'section-4-paragraph-6';
     p6.textContent = "Are you ready to join me on the journey?";
 
 const button = document.createElement('a')
-button.textContent = 'Learn more'
-button.href = '#section-2-parent-container'
-button.ariaLabel = 'click to learn more'
+button.textContent = 'join me'
+button.href = '#section-8-parent-container'
+button.ariaLabel = 'click to join me'
     
-     textsContainer.appendChild(p)
+    //  textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
     textsContainer.appendChild(p2)
     textsContainer.appendChild(p3)
@@ -482,7 +487,7 @@ eyeIcon.src = services1Image;
 eyeIcon.alt = 'close up of women getting face treatment'
 eyeIcon.id = 'eye-icon-1';
 eyeIcon.classList.add('services-image');
-cardItem1.style.backgroundImage = 'url(eyeIcon)'
+// cardItem1.style.backgroundImage = 'url(eyeIcon)'
 
 const cardTitle = document.createElement('h5')
 cardTitle.textContent = 'In-Person Facial Treatments:';
@@ -500,7 +505,7 @@ eyeIcon2.src = services2Image;
 eyeIcon2.alt = 'women in spa holding her face'
 eyeIcon2.id = 'eye-icon-2'
 eyeIcon2.classList.add('services-image')
-cardItem2.style.backgroundImage = 'url(eyeIcon2)'
+// cardItem2.style.backgroundImage = 'url(eyeIcon2)'
 
 const cardTitle2 = document.createElement('h5')
 cardTitle2.textContent = 'Face Yoga Workshops:';
@@ -518,7 +523,7 @@ eyeIcon3.src = services3Image;
 eyeIcon3.alt = 'portrait of women wearing white dress'
 eyeIcon3.id = 'eye-icon-3'
 eyeIcon3.classList.add('services-image')
-cardItem3.style.backgroundImage = 'url(eyeIcon3)'
+// cardItem3.style.backgroundImage = 'url(eyeIcon3)'
 
 const cardTitle3 = document.createElement('h5')
 cardTitle3.textContent = 'Self-Care Resources:';
@@ -552,7 +557,7 @@ cardItem4.appendChild(cardDescription4)
     cardsContainer.appendChild(cardItem1)
     cardsContainer.appendChild(cardItem2)
     cardsContainer.appendChild(cardItem3)
-    cardsContainer.appendChild(cardItem4)
+    // cardsContainer.appendChild(cardItem4)
     
 
     return parentContainer
@@ -703,13 +708,13 @@ const hr2 = document.createElement('hr')
 
 
 export {
-    instructorName,
-     yogaPoseImage,
-      section1Description,
-       pageLoadNav,
-       flipChartTitle,
+    // instructorName,
+    //  yogaPoseImage,
+    //   section1Description,
+    //    pageLoadNav,
+    //    flipChartTitle,
        section1Component,
-       section2Component,
+    //    section2Component,
        section3Component,
        section4Component,
        section5Component,

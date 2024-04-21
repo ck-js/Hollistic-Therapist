@@ -10,15 +10,15 @@ const body = document.body;
 const contentOutput = document.getElementById('content')
 
 // append restaurant name to content output
-body.insertBefore(instructorName(), contentOutput)
+// body.insertBefore(instructorName(), contentOutput)
 
 // append nav to content output
-body.insertBefore(pageLoadNav(), contentOutput)
+// body.insertBefore(pageLoadNav(), contentOutput)
  // append yoga pose image to content output
 // contentOutput.appendChild(yogaPoseImage());
 
  // access description container 
-const section1Container = document.getElementById('description-container')
+// const section1Container = document.getElementById('description-container')
 // append  description to description container
 // section1Container.appendChild(section1Description())
 
@@ -49,7 +49,7 @@ contentOutput.appendChild(instructorName())
 
 // set href attributes to in page link of each nav item
 const about = document.getElementById('About-anchor')
-about.href = '#section-2-parent-container';
+about.href = '#section-1-parent-container';
 const training = document.getElementById('Training-anchor')
 training.href = '#section-7-parent-container';
 const contact = document.getElementById('Contact-anchor')
