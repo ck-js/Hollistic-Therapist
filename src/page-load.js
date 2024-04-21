@@ -1,9 +1,9 @@
 import logoWhite from './logo.png'
 
 import section1Image from './section1image.jpg';
-import services1Image from './services1image.jpg';
-import services2Image from './services2image.jpg';
-import services3Image from './services3image.jpg';
+import services1Image from './services1image.jpeg';
+import services2Image from './services2image.jpeg';
+import services3Image from './services3image.jpeg';
 import services4Image from './services4image.jpg';
 
 import section2Image from './section2image2.jpg'
@@ -436,9 +436,12 @@ function section7Component() {
     const h1 = document.createElement('h1');
     h1.id = 'section-7-title';
     h1.classList.add('titles')
-    h1.textContent = "Education & Certifications";
-    // wrapWordInSpan('Paula', h1)
+    h1.textContent = "Treatments & Certifications";
     
+const p1 = document.createElement('p');
+p1.id = 'section-7-p1'
+p1.textContent = "Experience wellness journeys uniquely crafted through my years of training."
+
 const ul = document.createElement('ul')
 ul.classList.add('paragraphs')
 const li1 = document.createElement('li');
@@ -456,6 +459,7 @@ ul.appendChild(li3);
 ul.appendChild(li4);
 
     textsContainer.appendChild(h1)
+    textsContainer.appendChild(p1)
      textsContainer.appendChild(ul)
      
      parentContainer.appendChild(imageContainer)    
