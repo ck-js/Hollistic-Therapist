@@ -1,5 +1,5 @@
 // import function components from page-load.js
-import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component, section8Component, section9Component, section1Component } from "./page-load";
+import {instructorName, yogaPoseImage, section1Description, pageLoadNav, flipChartTitle, section2Component, section3Component, section4Component, section5Component, section6Component, section7Component, section8Component, section9Component, section1Component, section10Component } from "./page-load";
 // import css style file
 import './style.css'
 
@@ -41,7 +41,7 @@ contentOutput.appendChild(section8Component())
 contentOutput.appendChild(section7Component())
 
 
-
+contentOutput.appendChild(section10Component())
 contentOutput.appendChild(section9Component())
 
 contentOutput.appendChild(instructorName())

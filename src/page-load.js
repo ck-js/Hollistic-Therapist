@@ -442,6 +442,41 @@ const p1 = document.createElement('p');
 p1.id = 'section-7-p1'
 p1.textContent = "Experience wellness journeys uniquely crafted through my years of training."
 
+const h5 = document.createElement('h4');
+h5.id = 'section-7-h5';
+h5.textContent = 'Treatments Offered';
+
+const ul2 = document.createElement('ul');
+ul2.classList.add('paragraphs');
+
+const li10 = document.createElement('li')
+li10.textContent = 'Sculptural Face Lifting Massage'
+
+const li11 = document.createElement('li')
+li11.textContent = 'Buccal (Intra Oral) Massage'
+
+const li12 = document.createElement('li')
+li12.textContent = 'Facial Lymphatic Drainage Massage'
+
+const li13 = document.createElement('li')
+li13.textContent = 'Facial Gua Sha and Cupping'
+
+const li14 = document.createElement('li')
+li14.textContent = 'Ancient Thai Head Massage'
+
+const li15 = document.createElement('li')
+li15.textContent = 'Sound & Vibration Healing'
+
+ul2.appendChild(li10)
+ul2.appendChild(li11)
+ul2.appendChild(li12)
+ul2.appendChild(li13)
+ul2.appendChild(li14)
+ul2.appendChild(li15)
+
+const h4 = document.createElement('h4');
+h4.textContent = 'Certifications'
+
 const ul = document.createElement('ul')
 ul.classList.add('paragraphs')
 const li1 = document.createElement('li');
@@ -460,6 +495,9 @@ ul.appendChild(li4);
 
     textsContainer.appendChild(h1)
     textsContainer.appendChild(p1)
+    textsContainer.appendChild(h5)
+    textsContainer.appendChild(ul2)
+    textsContainer.appendChild(h4)
      textsContainer.appendChild(ul)
      
      parentContainer.appendChild(imageContainer)    
@@ -680,8 +718,8 @@ const hr2 = document.createElement('hr')
     textsContainer.appendChild(hr)
      textsContainer.appendChild(p)
      textsContainer.appendChild(p2)
-     textsContainer.appendChild(hr2)
-     textsContainer.appendChild(socialIconsContainer)
+    //  textsContainer.appendChild(hr2)
+    //  textsContainer.appendChild(socialIconsContainer)
      
 
     parentContainer.appendChild(textsContainer)
@@ -689,6 +727,66 @@ const hr2 = document.createElement('hr')
     return parentContainer
     }
 
+    function section10Component() {
+        const parentContainer = document.createElement('div')
+        parentContainer.id = 'section-10-parent-container';
+        
+const h2 = document.createElement('h2')
+h2.classList.add('titles')
+h2.textContent = "Clients Feedback"
+
+
+        const cardsContainer = document.createElement('div');
+        cardsContainer.id = 'section-10-cards-container';
+        
+    const cardItem1 = document.createElement('div')
+    cardItem1.classList.add('card-item')
+    const cardItem2 = document.createElement('div')
+    cardItem2.classList.add('card-item')
+    const cardItem3 = document.createElement('div')
+    cardItem3.classList.add('card-item')
+    
+    
+    
+    const cardDescription = document.createElement('p');
+    cardDescription.textContent = "What a delicious moment I spent with Chaya for a facial treatment! It's a holistic experience, complete relaxation, involving sound and gongs; she's very experienced and keeps learning and improving. I definitely recommend her!"
+    
+    const cardTitle = document.createElement('p')
+    cardTitle.textContent = '- Laurène Mauduit';
+
+    cardItem1.appendChild(cardDescription)
+    cardItem1.appendChild(cardTitle)
+    
+    const cardTitle2 = document.createElement('p')
+    cardTitle2.textContent = '- Dean Raphael';
+    
+    const cardDescription2 = document.createElement('p');
+    cardDescription2.textContent = "One of the most relaxing and intentional experiences I've had on the island. Preechaya has a unique touch, she is able to guide you into deep non-sleep relaxation. Highly recommended."
+    
+    cardItem2.appendChild(cardDescription2)
+    cardItem2.appendChild(cardTitle2)
+        
+    
+    const cardDescription3 = document.createElement('p');
+    cardDescription3.textContent = "Fantastic facial treatment which I can only recommend! I had the facial lift and could see the difference after the session. Chaya knows her skin stuff and you are in good hands if you wanna give your skin what it needs.";
+    
+    const cardTitle3 = document.createElement('p')
+    cardTitle3.textContent = '- Maria Eitzinger';
+
+cardItem3.appendChild(cardDescription3)
+    cardItem3.appendChild(cardTitle3)
+    
+    
+    parentContainer.appendChild(h2)
+        parentContainer.appendChild(cardsContainer)
+        cardsContainer.appendChild(cardItem1)
+        cardsContainer.appendChild(cardItem2)
+        cardsContainer.appendChild(cardItem3)
+        
+        
+    
+        return parentContainer
+        }
 
 
     function wrapWordInSpan(word, h1Element) {
@@ -726,5 +824,6 @@ export {
        section7Component,
        section8Component,
        section9Component,
+       section10Component,
 
      }; 
