@@ -422,7 +422,7 @@ width: 100%;
     align-items: center;    
         position: relative;
         background-color: var(--secondary-background-color);    
-    border: 3px solid black;        
+
     }
     
     #section-1-image-container {
@@ -665,7 +665,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid black;
+
     }
     #section-4-text-container p {
         
@@ -814,12 +814,12 @@ width: 100%;
         height: auto;
         background-color: var(--primary-background-color);
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
+        justify-content: center;
+        align-items: center;
         /* padding: 200px 0; */
         
         position: relative;
-        text-align: left;
+        
         
     }
     #section-7-image-container {
@@ -830,12 +830,8 @@ width: 100%;
     }
     #section-7-image-wrapper {
         width: 100%;
-        height: 100%;
-        background-image: url('section7image.jpg');
-        background-size: contain;
         /* border: 30px solid black;     */
     opacity: 0.9;
-        background-position: center;
         overflow: hidden;
     }
     #section-7-image-wrapper img {
@@ -852,8 +848,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     padding: 50px 100px;
-    /* background: linear-gradient(135deg, #DAB3FF, #FFB3B3);     */
-    background-color: var(--primary-background-color);
+        background-color: var(--primary-background-color);
     
     }
     
@@ -890,31 +885,30 @@ width: 100%;
     }
     
     #section-8-parent-container {
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
         width: 100%;
         height: auto;
         background-color: var(--secondary-background-color);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        position: relative;
-        text-align: left;
         
     }
     #section-8-cards-container {
+        height: 100%;
     width: 100%;
-    
     display: flex;
     flex-direction: row;
-    overflow:auto;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+
     
     
     }
     .card-item {
-        height: auto;
+        /* border: 3px solid black; */
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -923,31 +917,25 @@ width: 100%;
     
     padding-bottom: 100px;
     }
-    .card-item:nth-child(2) {
-    align-self: flex-start;
     
-    }
     .services-image {
         width: 80%;
+        height: 100%;
         
     }
-    /* #eye-icon {
-        width: 400px    ;
-        height: auto;
-        
-    } */
+
     .card-item h5 {
         font-size: 1.7rem;
         font-family: var(--paragraph-font-family);
         color: var(--primary-text-color);
         text-align: center;
-        font-weight: 100;
+        font-weight: 600;
     }
     .card-item p {
     width: 25ch;
     line-height: 1.2;
     font-family: var(--paragraph-font-family);
-    font-weight: 600;
+    font-weight: 300;
     }
     #section-10-parent-container {
     display: flex;
@@ -955,7 +943,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     padding: 100px 0;
-    
+    row-gap: 100px;
     }
     #section-10-parent-container h2 {
         text-transform: uppercase;
@@ -964,7 +952,7 @@ width: 100%;
     #section-10-cards-container {
         display: flex;
         flex-direction: row;
-        column-gap: 50px;
+        column-gap: 100px;
     }
     #section-10-parent-container .card-item {
         text-align: left;
@@ -974,7 +962,7 @@ width: 100%;
         }
         #section-10-parent-container .card-item p{
             color: --blac   ;
-            
+            font-weight: 200;
                 }
     
         #section-10-parent-container .card-item p:nth-child(2){
@@ -984,10 +972,8 @@ width: 100%;
     
     
     
-    
-    
+
     #section-9-parent-container {
-        width: 100vw;
         height: 300px;
         background-color: var(--secondary-background-color);
             display: flex;
@@ -1024,10 +1010,13 @@ width: 100%;
     font-size: 1.2rem;
     color: black;
     font-family: var(--paragraph-font-family);
+    font-weight: 200;
+    text-decoration: none;
     }
     #section-9-text-container a {
         font-size: 1.2rem;
         color: black;
+        text-decoration: none;
         
         }
     #section-9-socials-container {

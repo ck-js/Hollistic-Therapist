@@ -8,7 +8,7 @@ import services4Image from './services4image.jpg';
 
 import section2Image from './section2image2.jpg'
 import section3Image from './section3image.jpg'
-import section7Image from './section7image.jpg'
+import section7Image from './section7image.jpeg'
 import eyeIconSvg from './logo2.png';
 import facebookLogo from './Social-media-icons/facebook.svg'
 import instagramLogo from './Social-media-icons/instagram.svg'
@@ -320,15 +320,15 @@ function section4Component() {
     
     const p2 = document.createElement('p')
     p2.id = 'section-4-paragraph-2';
-    p2.textContent = "I'm Preechaya, and I'm on a mission to reshape our approach to skincare, beauty, and aging.";
+    p2.textContent = "I'm Preechaya, and I'm passionate about redefining the way we approach skincare, beauty, and aging.";
 
     const p3 = document.createElement('p')
     p3.id = 'section-4-paragraph-3';
-    p3.textContent = "As a certified holistic facialist, face yoga teacher, and sound healing practitioner with a firm believe in the mind-body connection, I've crafted sessions that not only focus on the skin's surface but also on overall well-being.";
+    p3.textContent = "As a certified holistic facialist, face yoga teacher, and sound healing practitioner, I believe in the power of the mind-body connection. That's why I've developed sessions that combine holistic beauty with healing practices to prioritize overall well-being beyond the skin's surface.";
 
     const p4 = document.createElement('p')
     p4.id = 'section-4-paragraph-4';
-    p4.textContent = "In 2022, I founded Chaya Wellness, a holistic health and beauty studio on Koh Phangan, offering in-person treatments alongside other therapists who specialize in energy and alternative healing.";
+    p4.textContent = "I warmly welcome you to my online space, where my goal is to share my knowledge and help guide people from all walks of life toward a more balanced mind, body, and skin through sustainable self-care rituals.";
 
 
     const p5 = document.createElement('p')
@@ -436,30 +436,30 @@ function section7Component() {
     const h1 = document.createElement('h1');
     h1.id = 'section-7-title';
     h1.classList.add('titles')
-    h1.textContent = "Treatments & Certifications";
+    h1.textContent = "Treatments offered";
     
 const p1 = document.createElement('p');
 p1.id = 'section-7-p1'
-p1.textContent = "Experience wellness journeys uniquely crafted through my years of training."
+p1.textContent = "Transform your mind, body and skin with me"
 
 const h5 = document.createElement('h4');
 h5.id = 'section-7-h5';
-h5.textContent = 'Treatments Offered';
+h5.textContent = 'beauty treatments';
 
 const ul2 = document.createElement('ul');
 ul2.classList.add('paragraphs');
 
 const li10 = document.createElement('li')
-li10.textContent = 'Sculptural Face Lifting Massage'
+li10.textContent = 'Sculptural Face Lifting TM Massage'
 
 const li11 = document.createElement('li')
-li11.textContent = 'Buccal (Intra Oral) Massage'
+li11.textContent = 'Buccal Intraoral Massage'
 
 const li12 = document.createElement('li')
-li12.textContent = 'Facial Lymphatic Drainage Massage'
+li12.textContent = 'Deep Tissue Facial Massage'
 
 const li13 = document.createElement('li')
-li13.textContent = 'Facial Gua Sha and Cupping'
+li13.textContent = '  Facial Gua Sha & Cupping'
 
 const li14 = document.createElement('li')
 li14.textContent = 'Ancient Thai Head Massage'
@@ -471,18 +471,18 @@ ul2.appendChild(li10)
 ul2.appendChild(li11)
 ul2.appendChild(li12)
 ul2.appendChild(li13)
-ul2.appendChild(li14)
-ul2.appendChild(li15)
+// ul2.appendChild(li14)
+// ul2.appendChild(li15)
 
 const h4 = document.createElement('h4');
-h4.textContent = 'Certifications'
+h4.textContent = 'other treatments'
 
 const ul = document.createElement('ul')
 ul.classList.add('paragraphs')
 const li1 = document.createElement('li');
-li1.textContent = 'Certified Facialist by Health & Beauty Development School of Thailand'
+li1.textContent = 'Ancient Thai Head Massage'
 const li2 = document.createElement('li');
-li2.textContent = 'Certified Integrative Vibrational Therapist by Yoga Sound Therapy'
+li2.textContent = 'Sound & Vibration Healing'
 const li3 = document.createElement('li');
 li3.textContent = 'Certified Face Yoga Teacher by The Danielle Collins Face Yoga Method'
 const li4 = document.createElement('li');
@@ -490,8 +490,8 @@ li4.textContent = 'Certified Sculptural Face Lifting™ Professional by Yakov Ge
 
 ul.appendChild(li1);
 ul.appendChild(li2);
-ul.appendChild(li3);
-ul.appendChild(li4);
+// ul.appendChild(li3);
+// ul.appendChild(li4);
 
     textsContainer.appendChild(h1)
     textsContainer.appendChild(p1)
@@ -535,7 +535,7 @@ const cardTitle = document.createElement('h5')
 cardTitle.textContent = 'In-Person Facial Treatments:';
 
 const cardDescription = document.createElement('p');
-cardDescription.textContent = 'Get visibly rejuvenated and relaxed with my signature facial treatments, which focus on hand massage techniques. My services include Sculptural Face Lifting, gua sha, and facial cupping. You can visit me at my Chaya Wellness Koh Phangan studio or as a guest therapist at various locations. Join my inner circle list for updates on availability.'
+cardDescription.textContent = 'Look and feel your best with my signature treatments. I specialize in Sculptural Face LiftingM, Buccal massage, Gua Sha, and facial cupping. Visit me at Chaya Wellness Koh Phangan or join my list to stay updated on my collaborated locations.'
 
 cardItem1.appendChild(eyeIcon)
 cardItem1.appendChild(cardTitle)
@@ -553,7 +553,7 @@ const cardTitle2 = document.createElement('h5')
 cardTitle2.textContent = 'Face Yoga Workshops:';
 
 const cardDescription2 = document.createElement('p');
-cardDescription2.textContent = 'Join me for transformative Face Yoga workshops, offered both online and in-person in group settings or private sessions, which include personalized consultations and tailored face yoga guides to address your unique facial needs.'
+cardDescription2.textContent = 'Join my face yoga workshops, offered online and in-person in both group settings or private sessions, which include personalized consultations and tailored face yoga guides to address your unique facial needs.'
 
 cardItem2.appendChild(eyeIcon2)
 cardItem2.appendChild(cardTitle2)
@@ -571,8 +571,7 @@ const cardTitle3 = document.createElement('h5')
 cardTitle3.textContent = 'Self-Care Resources:';
 
 const cardDescription3 = document.createElement('p');
-cardDescription3.textContent = "Through my self-care resources, you can access a wealth of holistic beauty education. Explore self-facial massage techniques, gua sha practices, and more on my social media platforms and newsletter. Stay connected and informed by subscribing to my email list, where you'll receive exclusive tips, updates, and links to all my channels.";
-
+cardDescription3.textContent = "Learn about self-facial massage techniques, gua sha practices, and more on my social media platforms and newsletter. Sign up for my email list to get exclusive tips, updates, and links to all my channels.";
 cardItem3.appendChild(eyeIcon3)
 cardItem3.appendChild(cardTitle3)
 cardItem3.appendChild(cardDescription3)
