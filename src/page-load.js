@@ -1,6 +1,6 @@
 import logoWhite from './logo.png'
 
-import section1Image from './section1image.jpg';
+import section1Image from './section1image2.jpg';
 import services1Image from './services1image.jpeg';
 import services2Image from './services2image.jpeg';
 import services3Image from './services3image.jpeg';
@@ -178,7 +178,7 @@ button.textContent = 'learn more';
 button.href = '#section-4-parent-container'
 button.ariaLabel = 'click to discover our work'
 
-textsContainer.appendChild(image2)
+// textsContainer.appendChild(image2)
 textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
     textsContainer.appendChild(button)
