@@ -903,7 +903,7 @@ width: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
 /* border: 3px solid black; */
     
@@ -922,8 +922,9 @@ width: 100%;
     }
     
     .services-image {
-        width: 80%;
-        height: 100%;
+        
+        width: 328px;
+        height: 410px;
         
     }
 
