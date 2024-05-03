@@ -1,9 +1,9 @@
 import logoWhite from './logo.png'
 
 import section1Image from './section1image2.jpg';
-import services1Image from './services1image.jpeg';
+import services1Image from './services2image.jpeg';
 import services2Image from './services2image.jpeg';
-import services3Image from './services3image.jpeg';
+import services3Image from './services2image.jpeg';
 import services4Image from './services4image.jpg';
 
 import section2Image from './section2image2.jpg'
