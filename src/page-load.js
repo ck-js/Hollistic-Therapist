@@ -164,6 +164,10 @@ function section1Component() {
     
 const image2 = new Image();
 image2.src = eyeIconSvg;
+
+const titleH6 = document.createElement('h6')
+titleH6.textContent = 'glow on flow '
+
     const p = document.createElement('p')
     p.id = 'section-1-paragraph';
     p.textContent = "Where skin glows, energy flows";
@@ -171,7 +175,7 @@ image2.src = eyeIconSvg;
     const h1 = document.createElement('h1');
     h1.id = 'section-1-title';
     h1.classList.add('titles')
-    h1.textContent = "experience the power of hollistic self-care rituals for radiant skin and wellbeing";
+    h1.textContent = "experience the power of hollistic self care rituals for radiant skin and wellbeing";
     
 const button = document.createElement('a')
 button.textContent = 'learn more';
@@ -179,9 +183,11 @@ button.href = '#section-4-parent-container'
 button.ariaLabel = 'click to discover our work'
 
 // textsContainer.appendChild(image2)
+textsContainer.appendChild(titleH6)
 textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
     textsContainer.appendChild(button)
+    
 
 
 

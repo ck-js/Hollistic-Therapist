@@ -38,7 +38,7 @@
   }
   @font-face {
     font-family: 'the-seasons';
-    src: url('./the-seasons-regular.otf') format('opentype');
+    src: url('./the-seasons-bold.otf') format('opentype');
          /* url('./Lora-SemiBold.ttf') format('truetype'); */
     font-weight: normal;
     font-style: normal;
@@ -455,6 +455,14 @@ width: 100%;
     }
     #section-1-text-container img {
     width: 150px;
+    }
+    #section-1-text-container h6 {
+font-weight: normal;
+font-family: var(--secondary-paragraph-font-family);
+text-transform: uppercase;
+font-size: 16px;
+margin-bottom: 50px;
+
     }
     #section-1-title {
         text-transform: uppercase;
