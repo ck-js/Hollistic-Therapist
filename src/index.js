@@ -54,8 +54,3 @@ const training = document.getElementById('Training-anchor')
 training.href = '#section-7-parent-container';
 const contact = document.getElementById('Contact-anchor')
 contact.href = '#section-9-parent-container';
-
-
-
-
-
