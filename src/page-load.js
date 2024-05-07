@@ -1,4 +1,4 @@
-import logoWhite from './logo.png'
+// import logoWhite from './logo.png'
 
 import section1Image from './section1image2.jpg';
 import services1Image from './services1image2.jpeg';
@@ -19,151 +19,27 @@ import './chamsbold.ttf';
 import './Lora-SemiBold.ttf';
 
 
-// function instructorName() {
-//     const div = document.createElement('div');
-//     div.classList.add('home-logo')
-//     const image = new Image();
-// image.src = logoWhite;
-// image.alt = 'glow on flow logo... go home '
-
-
-// div.appendChild(image)
-
-//     return div;
-// }
-// function pageLoadNav() {
-// // create nav container 
-//     const navContainer = document.createElement('div');
-// navContainer.id = 'nav-container';
-// // create ul element 
-// const ulElement = document.createElement('ul');
-// ulElement.id = 'nav-ul';
-// // create array of list items
-// const navItems = ['About', 'Training', 'Contact']
-
-// // loop through nav items
-// for (let i = 0; i < navItems.length; i++) {
-// // create li element
-// const liElement = document.createElement('li');
-// // set id of list items
-// liElement.id = navItems[i]
-
-// // create anchor element
-// const anchorElement = document.createElement('a');
-// anchorElement.id = navItems[i] + '-anchor';
-// liElement.appendChild(anchorElement)
-
-// // set text content of each li element
-// anchorElement.textContent = navItems[i];
-
-// // append li elements to ul element
-// ulElement.appendChild(liElement);
-
-
-// // liElement.addEventListener('click', (event) => {
-// //     alert('hello' + event.target.textContent)
-// // })
-// }
-// // append ul element to nav container
-// navContainer.appendChild(ulElement)
-
-// return navContainer;
-
-// }
-
-// function yogaPoseImage() {
-//     const descriptionContainer = document.createElement('div');
-//     const imgContainer = document.createElement('div');
-
-// descriptionContainer.id = 'description-container';
-// imgContainer.id = 'img-container';
-
-//     // const img = new Image();
-//     // img.src = yogaPoseImg;
-//     // img.alt = 'women holding yoga pose with full moon in background';
-
-// const videoElement = document.createElement('video')
-// videoElement.src = introVideo;
-// videoElement.autoplay = true;
-// videoElement.loop = true;
-// videoElement.muted = true;
-// // videoElement.alt = 'scenic video of a women with moving landscape between forest and ocean sunset'
-
-// imgContainer.style.backgroundImage = 'url(introVideo)'
-
-//     descriptionContainer.appendChild(imgContainer)
-// imgContainer.appendChild(videoElement)
-
-//     return descriptionContainer;
-// }
-// function section1Description() {
-
-//     const div = document.createElement('div');
-//     div.id = 'text-container';
-// const h1 = document.createElement('h1');
-// h1.id = 'section-1-title';
-// h1.classList.add('titles')
-    
-// const p = document.createElement('p');
-// // p.id = 'section-1-paragraph';
-// p.id = 'paragraph-description';
-// p.classList.add('paragraphs')
-// // h1.innerHTML = '';
-
-// // Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches 
-// // Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.
-
-// p.textContent = "Glow on Flow is a community where women of all ages and backgrounds embark on a journey toward glowing skin and inner well-being with holistic self-care approaches";
-
-// div.appendChild(h1)
-// div.appendChild(p)
-
-// return div;
-// }
-
-// const flipChartTitles = [
-//     'glowing skin',
-//     'empowerment',
-//  'female community',
-//   'inner wellbeing',
-//    'hollistic self care',
-//     'embracing the journey',
-// 'beauty',
-
-//     ];
-//     let currentIndex = 0;
-// function flipChartTitle() {
-    
-//   const flipChartElement = document.getElementById("section-1-title");
-//   flipChartElement.textContent = flipChartTitles[currentIndex];
-  
-//   currentIndex = (currentIndex + 1) % flipChartTitles.length;
-// }
-
-// section 1 components 
 function section1Component() {
     const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
+    parentContainer.classList.add('section-parents')
     parentContainer.id = 'section-1-parent-container';
     
     const imageContainer = document.createElement('div');
+    imageContainer.classList.add('section-image-containers')
     imageContainer.id = 'section-1-image-container';
 
     const imageWrapper = document.createElement('div');
+    imageWrapper.classList.add('section-image-wrappers')
     imageWrapper.id = 'section-1-image-wrapper';
     const image = new Image();
     image.src = section1Image;
-    image.alt = 'majestic asian woman with eyes closed holding her chest';
+    image.alt = 'asian woman with eyes closed holding her chest';
     
-    imageWrapper.style.backgroundImage = 'url(image)';
     imageWrapper.appendChild(image)
     imageContainer.appendChild(imageWrapper)
 
     const textsContainer = document.createElement('div');
     textsContainer.id = 'section-1-text-container';
-    
-const image2 = new Image();
-image2.src = eyeIconSvg;
 
 const titleH6 = document.createElement('h6')
 titleH6.textContent = 'glow on flow '
@@ -182,14 +58,11 @@ button.textContent = 'learn more';
 button.href = '#section-4-parent-container'
 button.ariaLabel = 'click to discover our work'
 
-// textsContainer.appendChild(image2)
 textsContainer.appendChild(titleH6)
 textsContainer.appendChild(p)
     textsContainer.appendChild(h1)
     textsContainer.appendChild(button)
     
-
-
 
      parentContainer.appendChild(imageContainer)    
     parentContainer.appendChild(textsContainer)
@@ -198,118 +71,10 @@ textsContainer.appendChild(p)
     return parentContainer
     }
 
-
-
-
-
-
-// section 2 components 
-// function section2Component() {
-// const parentContainer = document.createElement('div')
-// parentContainer.classList.add('bio')
-// parentContainer.id = 'section-2-parent-container';
-
-// const imageContainer = document.createElement('div');
-// imageContainer.id = 'section-2-image-container';
-
-// const imageWrapper = document.createElement('div');
-// imageWrapper.id = 'section-2-image-wrapper';
-// const image = new Image();
-// image.src = section2Image;
-// image.alt = 'majestic asian woman with eyes closed holding her chest';
-// imageWrapper.appendChild(image)
-// imageContainer.appendChild(imageWrapper)
-
-// const textsContainer = document.createElement('div');
-// textsContainer.id = 'section-2-text-container';
-
-// const p1 = document.createElement('p')
-// p1.id = 'section-2-paragraph-1';
-// p1.textContent = "- rejuvenate your mind and soul -";
-
-// const h1 = document.createElement('h1');
-// h1.id = 'section-2-title';
-// h1.classList.add('titles')
-// h1.textContent = 'glow on flows mission'
-  
-// const p2 = document.createElement('p')
-// p2.id = 'section-2-paragraph';
-// p2.classList.add('paragraphs')
-// p2.textContent = "Our mission is to change how women think about aging by embracing the journey instead of fighting it. At Glow on Flow, we empower women to appreciate the beauty of every stage of life.";
-
-// const button = document.createElement('button')
-// const anchor = document.createElement('a');
-// anchor.href = '#section-8-parent-container';
-// button.appendChild(anchor)
-// anchor.textContent = 'Learn More';
-
-
-
-// textsContainer.appendChild(p1)
-// textsContainer.appendChild(h1)
-//  textsContainer.appendChild(p2)
-//  textsContainer.appendChild(button)
-
-//  parentContainer.appendChild(imageContainer)
-// parentContainer.appendChild(textsContainer)
-
-// return parentContainer
-
-// }
-
-// section 3 components 
-function section3Component() {
+    
+function section2Component() {
     const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
-    parentContainer.id = 'section-3-parent-container';
-
-const imageWrapper = document.createElement('div');
-imageWrapper.id = 'section-3-image-wrapper';
-const image = new Image();
-image.src = section3Image;
-
-imageWrapper.appendChild(image)
-parentContainer.appendChild(imageWrapper)
-    // parentContainer.style.backgroundImage = 'url(image)'
-
-    const textsContainer = document.createElement('div');
-    textsContainer.id = 'section-3-text-container';
-    
-    const h1 = document.createElement('h1');
-    h1.id = 'section-3-title';
-    h1.classList.add('titles')
-    h1.textContent = "about Preechaya";
-    
-wrapWordInSpan('Preechaya',h1)
-
-const p1 = document.createElement('p')
-    p1.id = 'section-3-paragraph-1';
-    p1.textContent = 'live - love - laugh'
-
-    const p = document.createElement('p')
-    p.id = 'section-3-paragraph';
-    p.classList.add('paragraphs')
-    p.textContent = "I'm Preechaya, and I'm on a mission to redefine the way we approach skincare, beauty, and aging.";
-    
-    const button = document.createElement('a')
-    button.textContent = 'Facebook Me'
-    button.href = '#section-2-parent-container'
-    button.ariaLabel = 'click to message me on Facebook'
-
-    textsContainer.appendChild(p1)
-    textsContainer.appendChild(h1)
-     textsContainer.appendChild(p)
-     textsContainer.appendChild(button)
-    
-    parentContainer.appendChild(textsContainer)
-    
-    return parentContainer
-    }
-    
-// section 4 components 
-function section4Component() {
-    const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
+    parentContainer.classList.add('section-parents')
     parentContainer.id = 'section-4-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -365,70 +130,19 @@ button.ariaLabel = 'click to join me'
     return parentContainer
     }
 
-// section 5 components 
-function section5Component() {
+
+function section3Component() {
     const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
-    parentContainer.id = 'section-5-parent-container';
-    
-    const textsContainer = document.createElement('div');
-    textsContainer.id = 'section-5-text-container';
-    
-    const h1 = document.createElement('h1');
-    h1.id = 'section-5-title';
-    h1.classList.add('titles')
-    h1.textContent = "...getting to the root cause";
-    
-    wrapWordInSpan('root', h1)
-
-    const p = document.createElement('p')
-    p.id = 'section-5-paragraph';
-    p.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
-    
-    textsContainer.appendChild(h1)
-     textsContainer.appendChild(p)
-    
-    parentContainer.appendChild(textsContainer)
-    
-    return parentContainer
-    }
-// section 6 components 
-function section6Component() {
-    const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
-    parentContainer.id = 'section-6-parent-container';
-    
-    const textsContainer = document.createElement('div');
-    textsContainer.id = 'section-6-text-container';
-    
-    const h1 = document.createElement('h1');
-    h1.id = 'section-6-title';
-    h1.textContent = "Paulas life mission.";
-    wrapWordInSpan('Paulas', h1)
-
-
-    const p = document.createElement('p')
-    p.id = 'section-6-paragraph';
-    p.textContent = "As my passion for holistic beauty continued to grow, I pursued further certifications as a face yoga teacher and delved deeper into the iconic Sculptural Face Lifting™ method, which has now become my specialty. My commitment to holistic wellness and desire to empower others to embrace their natural beauty have guided each step of my journey.";
-    
-    textsContainer.appendChild(h1)
-     textsContainer.appendChild(p)
-    
-    parentContainer.appendChild(textsContainer)
-    
-    return parentContainer
-    }
-
-// section 7 components 
-function section7Component() {
-    const parentContainer = document.createElement('div')
-    parentContainer.classList.add('bio')
+    parentContainer.classList.add('section-parents')
+    parentContainer.classList.add('section-parents')
     parentContainer.id = 'section-7-parent-container';
     
     const imageContainer = document.createElement('div');
+    imageContainer.classList.add('section-image-containers')
     imageContainer.id = 'section-7-image-container';
     
     const imageWrapper = document.createElement('div');
+    imageWrapper.classList.add('section-image-wrappers')
     imageWrapper.id = 'section-7-image-wrapper';
     const image = new Image();
     image.src = section7Image;
@@ -456,7 +170,7 @@ const ul2 = document.createElement('ul');
 ul2.classList.add('paragraphs');
 
 const li10 = document.createElement('li')
-li10.textContent = 'Sculptural Face Lifting TM Massage'
+li10.textContent = 'Sculptural Face Lifting™ Massage'
 
 const li11 = document.createElement('li')
 li11.textContent = 'Buccal Intraoral Massage'
@@ -514,8 +228,10 @@ ul.appendChild(li2);
     }
 
 // section 8 components 
-function section8Component() {
+function section4Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('section-parents')
+    parentContainer.classList.add('section-parents')
     parentContainer.id = 'section-8-parent-container';
     
     const cardsContainer = document.createElement('div');
@@ -535,10 +251,9 @@ eyeIcon.src = services1Image;
 eyeIcon.alt = 'close up of women getting face treatment'
 eyeIcon.id = 'eye-icon-1';
 eyeIcon.classList.add('services-image');
-// cardItem1.style.backgroundImage = 'url(eyeIcon)'
 
 const cardTitle = document.createElement('h5')
-cardTitle.textContent = 'In-Person Facial Treatments:';
+cardTitle.textContent = 'In Person Facial Treatments:';
 
 const cardDescription = document.createElement('p');
 cardDescription.textContent = 'Look and feel your best with my signature treatments. I specialize in Sculptural Face LiftingM, Buccal massage, Gua Sha, and facial cupping. Visit me at Chaya Wellness Koh Phangan or join my list to stay updated on my collaborated locations.'
@@ -611,8 +326,10 @@ cardItem4.appendChild(cardDescription4)
     }
 
 // section 9 components 
-function section9Component() {
+function section6Component() {
     const parentContainer = document.createElement('div')
+    parentContainer.classList.add('section-parents')
+    parentContainer.classList.add('section-parents')
     parentContainer.id = 'section-9-parent-container';
     
     const textsContainer = document.createElement('div');
@@ -732,7 +449,7 @@ const hr2 = document.createElement('hr')
     return parentContainer
     }
 
-    function section10Component() {
+    function section5Component() {
         const parentContainer = document.createElement('div')
         parentContainer.id = 'section-10-parent-container';
         
@@ -815,20 +532,13 @@ cardItem3.appendChild(cardDescription3)
 
 
 export {
-    // instructorName,
-    //  yogaPoseImage,
-    //   section1Description,
-    //    pageLoadNav,
-    //    flipChartTitle,
+
        section1Component,
-    //    section2Component,
+       section2Component,       
        section3Component,
        section4Component,
        section5Component,
-       section6Component,
-       section7Component,
-       section8Component,
-       section9Component,
-       section10Component,
+    section6Component,
+       
 
      }; 
