@@ -56,7 +56,7 @@ titleH6.textContent = 'glow on flow '
 const button = document.createElement('a')
 button.textContent = 'learn more';
 button.href = '#section-4-parent-container'
-button.ariaLabel = 'click to discover our work'
+button.ariaLabel = 'click to learn more about glow on flow'
 
 textsContainer.appendChild(titleH6)
 textsContainer.appendChild(p)
